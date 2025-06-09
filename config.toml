@@ -1,0 +1,70 @@
+baseurl = ""
+title = "Hugo site"
+copyright = "Copyright (c) 2025, all rights reserved."
+languageCode = "en-US"
+canonifyurls = true
+pagination.pagerSize = 8
+enableRobotsTXT = true
+
+googleAnalytics = ""
+disqusShortname = ""
+
+SectionPagesMenu = "main"
+
+[[menu.main]]
+name = "Blog"
+weight = -120
+identifier = "blog"
+url = "/blog/"
+
+[[menu.main]]
+name = "Tags"
+weight = -110
+identifier = "tag"
+url = "/tags/"
+
+[[menu.main]]
+name = "Archive"
+weight = -100
+identifier = "archive"
+url = "/archive/"
+
+[taxonomies]
+archive = "archive"
+blog = "blog"
+category = "categories"
+series = "series"
+tag = "tags"
+micro = "micro"
+
+# Configure syntax highlight
+[markup]
+[markup.highlight]
+style = "monokai" # dark themes: monokai, api, fruity, native, rrt, swapoff ... https://xyproto.github.io/splash/docs/longer/all.html
+
+[params.author]
+name = "Owen Wertzberger"
+intro = """\
+    'Personal blog powered by [hugo](https://gohugo.io/), an open-source static site generator.
+  """
+
+[params.meta]
+keywords = ""
+description = "Personal blog."
+[params.meta.fediverse]
+creator = "@username@mastodon.server" # https://blog.joinmastodon.org/2024/07/highlighting-journalism-on-mastodon/
+
+[params]
+mainSections = ['blog']
+email = "o.wertzberger@wheelsbot.dev"
+github = "23087147"
+#gitlab = "gitlab id"
+#twitter = "twitter id"
+linkedin = "14992b164"
+theme_colors = "default-dark"
+enable_separate_main_page = true # enable a separate main page with author intro and recent posts instead of the list of posts
+generate_opengraph_image = false # enable opengraph image auto generation
+
+[params.mastodon] # https://joinmastodon.org/verification
+username = "wheelsbot"
+server = "https://wetdry.world"

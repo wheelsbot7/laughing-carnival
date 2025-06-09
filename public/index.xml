@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo site</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Hugo site</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright (c) 2025, all rights reserved.</copyright>
+    <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; is a static site engine written in Go.&lt;/p&gt;&#xA;&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/spf13&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test micro</title>
+      <link>//localhost:1313/micro/micro-test/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/micro/micro-test/</guid>
+      <description>&lt;p&gt;Markdown micro test post for the theme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test micro 2</title>
+      <link>//localhost:1313/micro/micro-test-2/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/micro/micro-test-2/</guid>
+      <description>&lt;p&gt;Markdown micro test post for the theme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test micro 3</title>
+      <link>//localhost:1313/micro/micro-test-3/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/micro/micro-test-3/</guid>
+      <description>&lt;p&gt;Markdown micro test post for the theme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test post</title>
+      <link>//localhost:1313/blog/example-post/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/example-post/</guid>
+      <description>&lt;p&gt;Markdown test post for the theme.&lt;/p&gt;&#xA;&lt;p&gt;Filler text is fine and all, but where&amp;rsquo;s the sauce? Where&amp;rsquo;s the pizazz, you&#xA;know? Life&amp;rsquo;s too short to make somebody read through Lorem Ipsum for the 10&#xA;billionth time. Make something fun!&lt;/p&gt;&#xA;&lt;p&gt;For example, I had a bagel for breakfast this morning, then a nice cup of&#xA;coffee. It was great.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
