@@ -1,26 +1,19 @@
 <footer class="post-footer">
-
   <div class="post-footer-data">
-            {{ partial "tags.html" . }}
-    {{if or .Params.categories .Params.series}}
-            {{ partial "categories.html" . }}
-            {{ partial "series.html" . }}
-    {{end}}
-    <hr>
+    {{ partial "tags.html" . }} {{if or .Params.categories .Params.series}} {{
+    partial "categories.html" . }} {{ partial "series.html" . }} {{end}}
+    <hr />
     {{if .Params.syndicate}}
-        <div class="syndicate"> Syndicated to: 
-      {{ range .Params.syndicate }}
-        {{ $u := urls.Parse . }}
-          <a href="{{ . }}">{{$u.Hostname}}</a>
+    <div class="syndicate">
+      Syndicated to: {{ range .Params.syndicate }} {{ $u := urls.Parse . }}
+      <a href="{{ . }}">{{$u.Hostname}}</a>
       {{ end }}
-        </div>
+    </div>
     {{ end }}
-    <div class="date"> Published: {{ .Date.Format "2006-01-02" }}</div>
-    <div class="updated"> Updated:   {{ .Lastmod.Format "2006-01-02" }}</div>
+    <div class="date">Published: {{ .Date.Format "2006-01-02" }}</div>
+    <div class="updated">Updated: {{ .Lastmod.Format "2006-01-02" }}</div>
   </div>
 </footer>
 
-{{ if eq .Type "post" }}
-  {{ partial "disqus.html" . }}
-  {{ partial "utterances.html" . }}
-{{ end }}
+{{ if eq .Type "post" }} {{ partial "disqus.html" . }} {{ partial
+"utterances.html" . }} {{ end }}
