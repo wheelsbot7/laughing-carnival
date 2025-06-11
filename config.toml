@@ -1,4 +1,4 @@
-baseurl = ""
+baseurl = "/"
 title = "Hugo site"
 copyright = "Copyright (c) 2025, all rights reserved."
 languageCode = "en-US"
