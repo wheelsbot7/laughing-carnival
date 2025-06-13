@@ -1,8 +1,8 @@
 ---
 title: "The easy way to install Arch"
-date: 2025-06-10T12:28:59-04:00
-publishDate: 2025-06-10T12:28:59-04:00
-lastmod: 2025-06-10T12:28:59-04:00
+date: 2024-08-05
+publishDate: 2024-08-05
+lastmod: 2024-08-05
 tags:
   - linux
   - arch
@@ -52,6 +52,7 @@ what they're doing, so I thought I'd make an install guide that makes sense to
 me and hopefully some of you. With me so far? Great, then let's go!
 
 1. ## PREPARE INSTALLATION MEDIUM
+
    1. It's a lot less scary than it sounds, you just need a USB flash drive with
       \>4GB of storage.
    2. Download the Arch ISO file from whatever mirror you want
@@ -71,13 +72,16 @@ me and hopefully some of you. With me so far? Great, then let's go!
 > mind losing.
 
 2. ## BOOT YOUR PC INTO BIOS
+
    1. This step is going to be different depending on what PC you have.
       Generally speaking, hold down either F2 or Delete when your computer shows
       the manufacturer logo
    2. Navigate to a "Boot" tab and change the priority boot option from Windows
       Boot Manager to the flash drive you just put Linux on.
    3. Save your changes and reboot.
+
 3. ## INSTALLING LINUX
+
    1. Finally! You're gonna see some command line gibberish pop up, but don't
       touch anything until you get to the full "Welcome to Arch Linux!" screen.
    2. We need to do 2 more things before starting the installation proper:
@@ -124,7 +128,9 @@ me and hopefully some of you. With me so far? Great, then let's go!
          but if you want your progress bar to look like Pac-Man, add a new line
          at the end that says `ILoveCandy`. Hit Ctrl+O to save and Ctrl+X to
          exit.
+
 4. ## ARCHINSTALL
+
    1. Alright, the hard part's out of the way, this is your victory lap. Once
       you've connected to the internet and ranked your mirrors, type
       `archinstall` and hit enter. You'll be taken to a TUI (text user
@@ -150,6 +156,7 @@ me and hopefully some of you. With me so far? Great, then let's go!
       the post-install chroot configuration, that's also above our pay grade.
       Just reboot and you should be able to log in with the account you
       specified earlier.
+
 5. ## POST-INSTALL
 
    1. If you're ready to dive into settings and configure your new system, this

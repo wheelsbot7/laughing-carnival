@@ -1,8 +1,8 @@
 ---
 title: "Fedora fortinet install guide"
-date: 2025-06-11T08:30:12-04:00
-publishDate: 2025-06-11T08:30:12-04:00
-lastmod: 2025-06-11T08:30:12-04:00
+date: 2024-10-08
+publishDate: 2024-10-08
+lastmod: 2024-10-08
 tags:
   - linux
   - fedora
