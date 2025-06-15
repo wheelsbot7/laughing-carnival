@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorial on </title>
-    <link>//localhost:1313/tags/tutorial/</link>
+    <link>/tags/tutorial/</link>
     <description>Recent content in Tutorial on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 08 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Fedora fortinet install guide</title>
-      <link>//localhost:1313/blog/fedorafortinet/</link>
+      <title> Fedora fortinet install guide</title>
+      <link>/blog/fedorafortinet/</link>
       <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/fedorafortinet/</guid>
+      <guid>/blog/fedorafortinet/</guid>
       <description>&lt;p&gt;I recently had the displeasure of trying to get my laptop to connect to the&#xA;college Wi-Fi after they tightened their restrictions on endpoint management.&#xA;Long story short, I was forced to switch from Arch to Fedora, and I feel the&#xA;need to document the experience so that nobody will ever have to go through what&#xA;I did to avoid crawling back to Windows with my tail between my legs.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>The easy way to install Arch</title>
-      <link>//localhost:1313/blog/archinstall/</link>
+      <title> The easy way to install Arch</title>
+      <link>/blog/archinstall/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/archinstall/</guid>
+      <guid>/blog/archinstall/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re just here for an install guide, hop down to the numbered list. If&#xA;you&amp;rsquo;re interested in learning &lt;em&gt;why&lt;/em&gt; you should install Linux, read on!&lt;/p&gt;&#xA;&lt;p&gt;Linux has a (well deserved) reputation for being intimidating for newcomers, and&#xA;I don&amp;rsquo;t think that&amp;rsquo;s a problem that needs to or even can be solved. The basic&#xA;model for selling operating systems isn&amp;rsquo;t exchanging money for functionality,&#xA;it&amp;rsquo;s exchanging money for convenience. Nobody buys Taco Bell because it&amp;rsquo;s&#xA;&lt;em&gt;better&lt;/em&gt; than what they can throw together at home, they buy it because they can&#xA;get food without the time and effort involved in making it themselves. In that&#xA;process they also defer the expertise involved in making a taco to an employee.&#xA;I know that&amp;rsquo;s a weird example, but you understand what I&amp;rsquo;m getting at, right?&lt;/p&gt;</description>
     </item>
   </channel>

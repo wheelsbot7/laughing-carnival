@@ -2,73 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>//localhost:1313/</link>
+    <link>/</link>
     <description>Recent content on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Jun 2025 08:54:57 -0400</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>//localhost:1313/about/</link>
+      <link>/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/about/</guid>
+      <guid>/about/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; is a static site engine written in Go.&lt;/p&gt;&#xA;&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/spf13&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title> Metahorror</title>
-      <link>//localhost:1313/blog/metahorror/metahorror/</link>
+      <link>/blog/metahorror/metahorror/</link>
       <pubDate>Mon, 09 Jun 2025 08:54:57 -0400</pubDate>
-      <guid>//localhost:1313/blog/metahorror/metahorror/</guid>
+      <guid>/blog/metahorror/metahorror/</guid>
       <description>&lt;svg aria-hidden=&#34;true&#34; class=&#34;hi-svg-inline&#34; fill=&#34;currentColor&#34; height=&#34;1em&#34; id=&#34;mdi-eye&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;1em&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z&#34; /&gt;&lt;/svg&gt;&#xA;&#xA;&#xA;&lt;blockquote class=&#34;alert alert-note&#34;&gt;&#xA;  &lt;p class=&#34;alert-heading&#34;&gt;&#xA;     Note &#xA;  &lt;/p&gt;&#xA;  &lt;p&gt;This post was written in 2024 after reading SCP-2614 and watching Mollystar&amp;rsquo;s&#xA;&lt;a href=&#34;https://www.youtube.com/watch?v=0UUrelL0WEs&#34;&gt;DEVICE THEORY&lt;/a&gt;. I&amp;rsquo;ve decided not&#xA;to edit it in order to preserve the original intent, as well as for the&#xA;context of it being written before the release of chapters 3 and 4. This&#xA;context is also important because this was never meant to be shared. It was&#xA;first and foremost supposed to be a creative exercise that allowed me to sort&#xA;out my thoughts on a deeply affecting piece of media. To put it bluntly, I was&#xA;feeling shaken and unhinged when I wrote this. Enjoy :)&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
-      <title> The Wonderful World of Dotfiles</title>
-      <link>//localhost:1313/blog/wonderful-world/</link>
-      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/wonderful-world/</guid>
-      <description>&lt;p&gt;I love it when names have a deeper meaning behind them, both linguistically and&#xA;conceptually. Those etymology charts in online dictionaries always fascinated&#xA;me, like little maps of interpretation. Conceptually, I have SCP-4000 to thank&#xA;for my love of name-based magic. Oh, sorry I meant to say&#xA;&lt;span style=&#39;color:green; font-weight: bold;&#39;&gt;THAT ONE PLACE WITH THE FAIRIES IN&#xA;A FOREST THAT CAN&amp;rsquo;T BE REFERRED TO WITH THE SAME NAME TWICE&lt;/span&gt;.&lt;/p&gt;&#xA;&lt;p&gt;But as you&amp;rsquo;ve probably guessed, today I want to talk about something named so&#xA;literally I can&amp;rsquo;t help but love it. There&amp;rsquo;s nothing to read into, nothing to&#xA;extract hidden meaning from. It&amp;rsquo;s as subtle as a sledgehammer and as elegant as&#xA;a cinder-block. Dotfiles are called that because hidden items in a file manager&#xA;are prefixed with a period. Personally, this radical simplicity is a breath of&#xA;fresh air. Not just the name, but hiding sensitive files behind such a&#xA;straightforward barrier. Windows requires you to type out &lt;code&gt;%appdata%&lt;/code&gt; every&#xA;single time, and sometimes it&amp;rsquo;s in &lt;code&gt;%localappdata%&lt;/code&gt; or the Documents folder or&#xA;some other app-specific folder. I&amp;rsquo;ve been confused by Linux&amp;rsquo;s lack of a &amp;ldquo;Program&#xA;Files&amp;rdquo; folder but it&amp;rsquo;s worth it if I can find the files I&amp;rsquo;ll actually edit.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title> What even is a Web Framework anyway?</title>
-      <link>//localhost:1313/blog/framework-demistify/</link>
-      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/framework-demistify/</guid>
-      <description>&lt;p&gt;There&amp;rsquo;s a bit of filler text that I&amp;rsquo;ve seen used a lot in website templates.&#xA;Don&amp;rsquo;t bother reading it, it&amp;rsquo;s all gibberish, but here&amp;rsquo;s a good snippet:&lt;/p&gt;&#xA;&lt;p style=&#39;font-size: small; line-height: 50%&#39;&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. &lt;span style=&#39;font-size: smaller&#39;&gt;Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. &lt;span style=&#39;font-size: smaller&#39;&gt;Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. &lt;span style=&#39;font-size: smaller&#39;&gt;Bring to the table win-win survival strategies to ensure proactive domination. &lt;span style=&#39;font-size: smaller&#39;&gt;At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. &lt;span style=&#39;font-size: smaller&#39;&gt;User generated content in real-time will have multiple touchpoints for offshoring. Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title> Fedora fortinet install guide</title>
-      <link>//localhost:1313/blog/fedorafortinet/</link>
+      <link>/blog/fedorafortinet/</link>
       <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/fedorafortinet/</guid>
+      <guid>/blog/fedorafortinet/</guid>
       <description>&lt;p&gt;I recently had the displeasure of trying to get my laptop to connect to the&#xA;college Wi-Fi after they tightened their restrictions on endpoint management.&#xA;Long story short, I was forced to switch from Arch to Fedora, and I feel the&#xA;need to document the experience so that nobody will ever have to go through what&#xA;I did to avoid crawling back to Windows with my tail between my legs.&lt;/p&gt;</description>
     </item>
     <item>
       <title> The easy way to install Arch</title>
-      <link>//localhost:1313/blog/archinstall/</link>
+      <link>/blog/archinstall/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/archinstall/</guid>
+      <guid>/blog/archinstall/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re just here for an install guide, hop down to the numbered list. If&#xA;you&amp;rsquo;re interested in learning &lt;em&gt;why&lt;/em&gt; you should install Linux, read on!&lt;/p&gt;&#xA;&lt;p&gt;Linux has a (well deserved) reputation for being intimidating for newcomers, and&#xA;I don&amp;rsquo;t think that&amp;rsquo;s a problem that needs to or even can be solved. The basic&#xA;model for selling operating systems isn&amp;rsquo;t exchanging money for functionality,&#xA;it&amp;rsquo;s exchanging money for convenience. Nobody buys Taco Bell because it&amp;rsquo;s&#xA;&lt;em&gt;better&lt;/em&gt; than what they can throw together at home, they buy it because they can&#xA;get food without the time and effort involved in making it themselves. In that&#xA;process they also defer the expertise involved in making a taco to an employee.&#xA;I know that&amp;rsquo;s a weird example, but you understand what I&amp;rsquo;m getting at, right?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Test micro</title>
-      <link>//localhost:1313/micro/micro-test/</link>
+      <link>/micro/micro-test/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/micro/micro-test/</guid>
+      <guid>/micro/micro-test/</guid>
       <description>&lt;p&gt;Markdown micro test post for the theme.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Test micro 2</title>
-      <link>//localhost:1313/micro/micro-test-2/</link>
+      <link>/micro/micro-test-2/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/micro/micro-test-2/</guid>
+      <guid>/micro/micro-test-2/</guid>
       <description>&lt;p&gt;Markdown micro test post for the theme.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Test micro 3</title>
-      <link>//localhost:1313/micro/micro-test-3/</link>
+      <link>/micro/micro-test-3/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/micro/micro-test-3/</guid>
+      <guid>/micro/micro-test-3/</guid>
       <description>&lt;p&gt;Markdown micro test post for the theme.&lt;/p&gt;</description>
     </item>
   </channel>

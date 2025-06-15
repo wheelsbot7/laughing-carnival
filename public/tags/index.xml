@@ -2,101 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>//localhost:1313/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Jun 2025 08:54:57 -0400</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fiction</title>
-      <link>//localhost:1313/tags/fiction/</link>
+      <link>/tags/fiction/</link>
       <pubDate>Mon, 09 Jun 2025 08:54:57 -0400</pubDate>
-      <guid>//localhost:1313/tags/fiction/</guid>
+      <guid>/tags/fiction/</guid>
       <description></description>
     </item>
     <item>
       <title>Thoughts</title>
-      <link>//localhost:1313/tags/thoughts/</link>
+      <link>/tags/thoughts/</link>
       <pubDate>Mon, 09 Jun 2025 08:54:57 -0400</pubDate>
-      <guid>//localhost:1313/tags/thoughts/</guid>
+      <guid>/tags/thoughts/</guid>
       <description></description>
     </item>
     <item>
       <title>Writing</title>
-      <link>//localhost:1313/tags/writing/</link>
+      <link>/tags/writing/</link>
       <pubDate>Mon, 09 Jun 2025 08:54:57 -0400</pubDate>
-      <guid>//localhost:1313/tags/writing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Blog</title>
-      <link>//localhost:1313/tags/blog/</link>
-      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/blog/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Guide</title>
-      <link>//localhost:1313/tags/guide/</link>
-      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/guide/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>//localhost:1313/tags/linux/</link>
-      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>//localhost:1313/tags/javascript/</link>
-      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Webdev</title>
-      <link>//localhost:1313/tags/webdev/</link>
-      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/webdev/</guid>
+      <guid>/tags/writing/</guid>
       <description></description>
     </item>
     <item>
       <title>Fedora</title>
-      <link>//localhost:1313/tags/fedora/</link>
+      <link>/tags/fedora/</link>
       <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/fedora/</guid>
+      <guid>/tags/fedora/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>//localhost:1313/tags/tutorial/</link>
+      <link>/tags/tutorial/</link>
       <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/tutorial/</guid>
+      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
     <item>
       <title>Arch</title>
-      <link>//localhost:1313/tags/arch/</link>
+      <link>/tags/arch/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/arch/</guid>
+      <guid>/tags/arch/</guid>
       <description></description>
     </item>
     <item>
       <title>Micro</title>
-      <link>//localhost:1313/tags/micro/</link>
+      <link>/tags/micro/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/micro/</guid>
+      <guid>/tags/micro/</guid>
       <description></description>
     </item>
     <item>
       <title>Test</title>
-      <link>//localhost:1313/tags/test/</link>
+      <link>/tags/test/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/test/</guid>
+      <guid>/tags/test/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fiction on </title>
-    <link>//localhost:1313/tags/fiction/</link>
+    <link>/tags/fiction/</link>
     <description>Recent content in Fiction on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 09 Jun 2025 08:54:57 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/fiction/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/fiction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title> Metahorror</title>
-      <link>//localhost:1313/blog/metahorror/metahorror/</link>
+      <link>/blog/metahorror/metahorror/</link>
       <pubDate>Mon, 09 Jun 2025 08:54:57 -0400</pubDate>
-      <guid>//localhost:1313/blog/metahorror/metahorror/</guid>
-      <description>&lt;svg aria-hidden=&#34;true&#34; class=&#34;hi-svg-inline&#34; fill=&#34;currentColor&#34; height=&#34;1em&#34; id=&#34;mdi-eye&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;1em&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z&#34; /&gt;&lt;/svg&gt;</description>
+      <guid>/blog/metahorror/metahorror/</guid>
+      <description>&lt;svg aria-hidden=&#34;true&#34; class=&#34;hi-svg-inline&#34; fill=&#34;currentColor&#34; height=&#34;1em&#34; id=&#34;mdi-eye&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;1em&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z&#34; /&gt;&lt;/svg&gt;&#xA;&#xA;&#xA;&lt;blockquote class=&#34;alert alert-note&#34;&gt;&#xA;  &lt;p class=&#34;alert-heading&#34;&gt;&#xA;     Note &#xA;  &lt;/p&gt;&#xA;  &lt;p&gt;This post was written in 2024 after reading SCP-2614 and watching Mollystar&amp;rsquo;s&#xA;&lt;a href=&#34;https://www.youtube.com/watch?v=0UUrelL0WEs&#34;&gt;DEVICE THEORY&lt;/a&gt;. I&amp;rsquo;ve decided not&#xA;to edit it in order to preserve the original intent, as well as for the&#xA;context of it being written before the release of chapters 3 and 4. This&#xA;context is also important because this was never meant to be shared. It was&#xA;first and foremost supposed to be a creative exercise that allowed me to sort&#xA;out my thoughts on a deeply affecting piece of media. To put it bluntly, I was&#xA;feeling shaken and unhinged when I wrote this. Enjoy :)&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
   </channel>
 </rss>
