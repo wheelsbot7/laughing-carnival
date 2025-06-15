@@ -79,3 +79,7 @@ server = "https://wetdry.world"
 
 [markup.goldmark.renderer]
 unsafe = true # Allow HTML in md files
+
+[caches]
+[caches.images]
+dir = ':cacheDir/images'
