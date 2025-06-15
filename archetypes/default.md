@@ -7,10 +7,6 @@ tags:
   - blog
 categories: []
 series: []
-syndicate: []
-audio: []
-videos: []
-images: []
 description: "GodsStrongestPoster"
 draft: true
 ---

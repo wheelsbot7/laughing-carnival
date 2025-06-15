@@ -1,5 +1,5 @@
 ---
-title: "The Wonderful World of Dotfiles"
+title: " The Wonderful World of Dotfiles"
 date: 2025-03-19
 publishDate: 2025-03-19
 lastmod: 2025-03-19

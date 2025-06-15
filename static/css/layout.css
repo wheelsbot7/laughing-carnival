@@ -1,5 +1,38 @@
+@font-face {
+	font-family: "Geist";
+	src: url("/fonts/Geist.woff2") format("woff2");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Geist Mono";
+	src: url("/fonts/GeistMono.woff2") format("woff2");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inclusive_Sans";
+	src: url("/fonts/InclusiveSans-Regular.ttf") format("truetype");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url("/fonts/UbuntuNerdFont-Regular.ttf") format("truetype");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, Gadget, sans-serif;
+  font-family: Ubuntu, sans-serif;
   counter-reset: heading;
   margin: 0;
 }

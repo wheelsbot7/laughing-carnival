@@ -1,5 +1,5 @@
 ---
-title: "Metahorror"
+title: " Metahorror"
 date: 2025-06-09T08:54:57-04:00
 publishDate: 2025-06-09T08:54:57-04:00
 lastmod: 2025-06-09T08:54:57-04:00
@@ -17,8 +17,11 @@ images: []
 description:
   "A short piece on the potential of metafictional horror by examining SCP-2614.
   Written 1 year before the release of DELTARUNE Chapters 3 and 4."
-draft: false
 ---
+
+{{ < ico mdi eye > }}
+
+<!--more-->
 
 > [!NOTE]
 >
