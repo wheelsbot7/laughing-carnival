@@ -13,7 +13,7 @@ syndicate: []
 audio: []
 videos: []
 description: "An exploration of the terminology behind JavaScript frameworks"
-draft: true
+draft: false
 ---
 
 There's a bit of filler text that I've seen used a lot in website templates.
