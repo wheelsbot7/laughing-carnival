@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on Hugo site</title>
+    <link>//localhost:1313/tags/markdown/</link>
+    <description>Recent content in Markdown on Hugo site</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright (c) 2025, all rights reserved.</copyright>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test post</title>
+      <link>//localhost:1313/blog/example-post/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/example-post/</guid>
+      <description>&lt;!-- markdownlint-disable MD025 --&gt;&#xA;&lt;p&gt;Markdown test post for the theme.&lt;/p&gt;&#xA;&lt;p&gt;Filler text is fine and all, but where&amp;rsquo;s the sauce? Where&amp;rsquo;s the pizazz, you&#xA;know? Life&amp;rsquo;s too short to make somebody read through Lorem Ipsum for the 10&#xA;billionth time. Make something fun!&lt;/p&gt;&#xA;&lt;p&gt;For example, I had a bagel for breakfast this morning, then a nice cup of&#xA;coffee. It was great.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

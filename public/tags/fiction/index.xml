@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fiction on </title>
+    <link>//localhost:1313/tags/fiction/</link>
+    <description>Recent content in Fiction on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Jun 2025 08:54:57 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/fiction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Metahorror</title>
+      <link>//localhost:1313/blog/metahorror/metahorror/</link>
+      <pubDate>Mon, 09 Jun 2025 08:54:57 -0400</pubDate>
+      <guid>//localhost:1313/blog/metahorror/metahorror/</guid>
+      <description>&lt;svg aria-hidden=&#34;true&#34; class=&#34;hi-svg-inline&#34; fill=&#34;currentColor&#34; height=&#34;1em&#34; id=&#34;mdi-eye&#34; viewBox=&#34;0 0 24 24&#34; width=&#34;1em&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z&#34; /&gt;&lt;/svg&gt;</description>
+    </item>
+  </channel>
+</rss>

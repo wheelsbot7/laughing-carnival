@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="author" content="Owen Wertzberger" />
+  
+  <meta name="description" content="I recently had the displeasure of trying to get my laptop to connect to the college Wi-Fi after they tightened their restrictions on endpoint management. Long story short, I was forced to switch from Arch to Fedora, and I feel the need to document the experience so that nobody will ever have to go through what I did to avoid crawling back to Windows with my tail between my legs." />
+  
+  <meta name="keywords" content="" />
+  
+  <meta name="fediverse:creator" content="@wheelsbot@wetdry.world" />
+  
+  <meta
+    name="viewport"
+    content="width=device-width,minimum-scale=1,initial-scale=1"
+  />
+  <meta name="generator" content="Hugo 0.147.8">
+
+  <link rel="canonical" href="//localhost:1313/blog/fedorafortinet/" />
+
+   <meta property="og:url" content="//localhost:1313/blog/fedorafortinet/">
+  <meta property="og:title" content=" Fedora fortinet install guide">
+  <meta property="og:description" content="I recently had the displeasure of trying to get my laptop to connect to the college Wi-Fi after they tightened their restrictions on endpoint management. Long story short, I was forced to switch from Arch to Fedora, and I feel the need to document the experience so that nobody will ever have to go through what I did to avoid crawling back to Windows with my tail between my legs.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-10-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-08T00:00:00+00:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Fedora">
+    <meta property="article:tag" content="Tutorial">
+ 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content=" Fedora fortinet install guide">
+  <meta name="twitter:description" content="I recently had the displeasure of trying to get my laptop to connect to the college Wi-Fi after they tightened their restrictions on endpoint management. Long story short, I was forced to switch from Arch to Fedora, and I feel the need to document the experience so that nobody will ever have to go through what I did to avoid crawling back to Windows with my tail between my legs.">
+  
+  <meta itemprop="name" content=" Fedora fortinet install guide">
+  <meta itemprop="description" content="I recently had the displeasure of trying to get my laptop to connect to the college Wi-Fi after they tightened their restrictions on endpoint management. Long story short, I was forced to switch from Arch to Fedora, and I feel the need to document the experience so that nobody will ever have to go through what I did to avoid crawling back to Windows with my tail between my legs.">
+  <meta itemprop="datePublished" content="2024-10-08T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-08T00:00:00+00:00">
+  <meta itemprop="wordCount" content="591">
+  <meta itemprop="keywords" content="Linux,Fedora,Tutorial">
+
+  <link rel="stylesheet" href="/css/layout.css" />
+
+  
+  <link rel="stylesheet" href="/css/default-dark.css" />
+   
+
+  <title>
+        Fedora fortinet install guide  
+  </title>
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="//localhost:1313/">Wheelsblog V7</a>
+    </div> 
+
+    
+    
+    <a class="nav-item" href="/blog/"><div class="nav-item-title">Blog</div></a>
+    
+    <a class="nav-item" href="/tags/"><div class="nav-item-title">Tags</div></a>
+    
+    <a class="nav-item" href="/archive/"><div class="nav-item-title">Archive</div></a>
+    
+    <a class="nav-item" href="/about/"><div class="nav-item-title">About</div></a>
+    
+
+  </nav>
+
+</div>
+
+</header>
+
+
+<article class="post">
+  <h1 class="title"> Fedora fortinet install guide</h1>
+  <div class="metadata">
+    - - -<br />
+    title:  Fedora fortinet install guide <br />
+
+    published: 2024-10-08 <br />
+     
+    <div class="tags">
+      tags: 
+      <div class="tag">
+        <a href="/tags/linux">#linux</a>
+      </div>
+      
+      <div class="tag">
+        <a href="/tags/fedora">#fedora</a>
+      </div>
+      
+      <div class="tag">
+        <a href="/tags/tutorial">#tutorial</a>
+      </div>
+      
+    </div>
+     
+    <div class="categories">
+      categories: 
+      <a href="/categories/software">software</a>
+      
+    </div>
+       - - -<br />
+  </div>
+
+  <div class="content"><p>I recently had the displeasure of trying to get my laptop to connect to the
+college Wi-Fi after they tightened their restrictions on endpoint management.
+Long story short, I was forced to switch from Arch to Fedora, and I feel the
+need to document the experience so that nobody will ever have to go through what
+I did to avoid crawling back to Windows with my tail between my legs.</p>
+<h2 id="why-are-we-even-doing-this">Why are we even doing this?</h2>
+<p>Normally using endpoint management software is annoying, but painless. Install a
+program, run it, it configures some stuff behind the scenes, you&rsquo;re good to go.
+However, this only works if you&rsquo;re using a system the developers expect their
+customers to use. Since the vast majority of them use Windows, any Linux
+versions are janky at best and non-functional at worst. Thankfully, my college
+offered a work-around for &ldquo;miscellaneous devices&rdquo;, set up the whole thing
+manually.</p>
+<p><img src="images/Screenshot_20240906_114655.png" alt="Screenshot of network configuration on KDE Plasma"></p>
+<p>The process of configuring a secure connection manually is a bit overwhelming,
+but it&rsquo;s ultimately just putting squares in the square hole and circles in the
+circle hole. Your organization will provide all of these, though sometimes under
+different names, because god forbid anything about this be easy. Anyway, last
+year a change was made at my college, requiring not just the identity, domain,
+certificates and private key, but also a background service called &ldquo;Fortinac
+Persistent Agent&rdquo;. Only problem? It only offered .deb and .rpm files. Hardly
+surprising, the only reason they had <em>any</em> Linux support was for Raspberry Pi
+projects. Regardless, that meant I had to distrohop yet again.</p>
+<h2 id="the-actual-solution">The actual solution</h2>
+<p>When signing in through their web portal, Fortinac offered automatic
+configuration programs for Ubuntu and Fedora. I will never know if they actually
+work or if I was just doing something wrong, because they only ever did jack
+shit for me. No, the actual solution was a lot closer to the manual setup I&rsquo;d
+been doing before.</p>
+<ol>
+<li>Install Fedora. Stock standard install, nothing special that would need to be
+covered here.</li>
+<li>Configure Wi-Fi manually. Same as before, download certificates and keys,
+plug in my credentials, and that <em>should</em> be the end of it</li>
+<li>Download .rpm file. Normally the connection would just work at this point,
+but instead it redirected me to download either a .deb or .rpm file. I did so
+and installed their &ldquo;Persistent Agent&rdquo; but nothing happened. I looked for an
+executable it might have put somewhere in /bin, but nothing. Then I
+remembered I wasn&rsquo;t in Arch anymore and if I wanted something to fully
+install, I would need to restart.</li>
+<li>Restart. Finally, it works. The Persistent Agent configured my IP and I
+connected without any issues.</li>
+</ol>
+<p>Looking back on the process, it was actually pretty simple. The only reason it
+took so long for me to figure it out was the lack of transparency and
+documentation. That&rsquo;s the whole reason I&rsquo;m writing this. Good luck, hope this
+helped.</p>
+<h3 id="edit-except-actually-that-was-all-a-lie-and-i-have-no-clue-why">EDIT: EXCEPT ACTUALLY THAT WAS ALL A LIE AND I HAVE NO CLUE WHY</h3>
+<p>Adding this as an addendum, but I reinstalled Arch after they announced their
+collaboration with Valve, and the Wi-Fi connected without issue, even without
+the persistent agent. So really I have no idea why any of this worked or didn&rsquo;t.
+Probably something changed on the backend or I was just doing something wrong in
+the first place that I somehow managed to avoid this time. Either way, just
+wanted to mention that everything stated above ended up being completely
+useless, at least to me. Might still help someone, but not me.</p>
+</div>
+</article>
+
+ 
+<div class="related-content">
+  
+  <div class="title">Related content</div>
+  <ul>
+    
+    <li><a href="/blog/archinstall/"> The easy way to install Arch</a></li>
+    
+  </ul>
+  
+</div>
+
+   <footer>
+
+  <div class="social-links-footer">
+  
+  <a href="mailto:o.wertzberger@wheelsbot.dev"><div class="social-link">Email</div></a>
+   
+  <a href="https://github.com/wheelsbot7" target="_blank"
+    ><div class="social-link">GitHub</div></a
+  >
+     
+  <a href="https://www.linkedin.com/in/owen-wertzberger-14992b164" target="_blank"
+    ><div class="social-link">LinkedIn</div></a
+  >
+   
+  <a rel="me" href="https://wetdry.world/@wheelsbot" target="_blank"
+    ><div class="social-link">Mastodon</div></a
+  >
+  
+
+  <div class="social-link">
+    
+  </div>
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

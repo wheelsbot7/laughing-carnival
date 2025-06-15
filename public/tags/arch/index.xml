@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arch on </title>
+    <link>//localhost:1313/tags/arch/</link>
+    <description>Recent content in Arch on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/arch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The easy way to install Arch</title>
+      <link>//localhost:1313/blog/archinstall/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/archinstall/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re just here for an install guide, hop down to the numbered list. If&#xA;you&amp;rsquo;re interested in learning &lt;em&gt;why&lt;/em&gt; you should install Linux, read on!&lt;/p&gt;&#xA;&lt;p&gt;Linux has a (well deserved) reputation for being intimidating for newcomers, and&#xA;I don&amp;rsquo;t think that&amp;rsquo;s a problem that needs to or even can be solved. The basic&#xA;model for selling operating systems isn&amp;rsquo;t exchanging money for functionality,&#xA;it&amp;rsquo;s exchanging money for convenience. Nobody buys Taco Bell because it&amp;rsquo;s&#xA;&lt;em&gt;better&lt;/em&gt; than what they can throw together at home, they buy it because they can&#xA;get food without the time and effort involved in making it themselves. In that&#xA;process they also defer the expertise involved in making a taco to an employee.&#xA;I know that&amp;rsquo;s a weird example, but you understand what I&amp;rsquo;m getting at, right?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

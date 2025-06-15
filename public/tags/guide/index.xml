@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guide on </title>
+    <link>//localhost:1313/tags/guide/</link>
+    <description>Recent content in Guide on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 19 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> The Wonderful World of Dotfiles</title>
+      <link>//localhost:1313/blog/wonderful-world/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/wonderful-world/</guid>
+      <description>&lt;p&gt;I love it when names have a deeper meaning behind them, both linguistically and&#xA;conceptually. Those etymology charts in online dictionaries always fascinated&#xA;me, like little maps of interpretation. Conceptually, I have SCP-4000 to thank&#xA;for my love of name-based magic. Oh, sorry I meant to say&#xA;&lt;span style=&#39;color:green; font-weight: bold;&#39;&gt;THAT ONE PLACE WITH THE FAIRIES IN&#xA;A FOREST THAT CAN&amp;rsquo;T BE REFERRED TO WITH THE SAME NAME TWICE&lt;/span&gt;.&lt;/p&gt;&#xA;&lt;p&gt;But as you&amp;rsquo;ve probably guessed, today I want to talk about something named so&#xA;literally I can&amp;rsquo;t help but love it. There&amp;rsquo;s nothing to read into, nothing to&#xA;extract hidden meaning from. It&amp;rsquo;s as subtle as a sledgehammer and as elegant as&#xA;a cinder-block. Dotfiles are called that because hidden items in a file manager&#xA;are prefixed with a period. Personally, this radical simplicity is a breath of&#xA;fresh air. Not just the name, but hiding sensitive files behind such a&#xA;straightforward barrier. Windows requires you to type out &lt;code&gt;%appdata%&lt;/code&gt; every&#xA;single time, and sometimes it&amp;rsquo;s in &lt;code&gt;%localappdata%&lt;/code&gt; or the Documents folder or&#xA;some other app-specific folder. I&amp;rsquo;ve been confused by Linux&amp;rsquo;s lack of a &amp;ldquo;Program&#xA;Files&amp;rdquo; folder but it&amp;rsquo;s worth it if I can find the files I&amp;rsquo;ll actually edit.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

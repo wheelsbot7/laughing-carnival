@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on </title>
+    <link>//localhost:1313/tags/blog/</link>
+    <description>Recent content in Blog on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> The Wonderful World of Dotfiles</title>
+      <link>//localhost:1313/blog/wonderful-world/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/wonderful-world/</guid>
+      <description>&lt;p&gt;I love it when names have a deeper meaning behind them, both linguistically and&#xA;conceptually. Those etymology charts in online dictionaries always fascinated&#xA;me, like little maps of interpretation. Conceptually, I have SCP-4000 to thank&#xA;for my love of name-based magic. Oh, sorry I meant to say&#xA;&lt;span style=&#39;color:green; font-weight: bold;&#39;&gt;THAT ONE PLACE WITH THE FAIRIES IN&#xA;A FOREST THAT CAN&amp;rsquo;T BE REFERRED TO WITH THE SAME NAME TWICE&lt;/span&gt;.&lt;/p&gt;&#xA;&lt;p&gt;But as you&amp;rsquo;ve probably guessed, today I want to talk about something named so&#xA;literally I can&amp;rsquo;t help but love it. There&amp;rsquo;s nothing to read into, nothing to&#xA;extract hidden meaning from. It&amp;rsquo;s as subtle as a sledgehammer and as elegant as&#xA;a cinder-block. Dotfiles are called that because hidden items in a file manager&#xA;are prefixed with a period. Personally, this radical simplicity is a breath of&#xA;fresh air. Not just the name, but hiding sensitive files behind such a&#xA;straightforward barrier. Windows requires you to type out &lt;code&gt;%appdata%&lt;/code&gt; every&#xA;single time, and sometimes it&amp;rsquo;s in &lt;code&gt;%localappdata%&lt;/code&gt; or the Documents folder or&#xA;some other app-specific folder. I&amp;rsquo;ve been confused by Linux&amp;rsquo;s lack of a &amp;ldquo;Program&#xA;Files&amp;rdquo; folder but it&amp;rsquo;s worth it if I can find the files I&amp;rsquo;ll actually edit.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What even is a Web Framework anyway?</title>
+      <link>//localhost:1313/blog/framework-demistify/</link>
+      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/framework-demistify/</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s a bit of filler text that I&amp;rsquo;ve seen used a lot in website templates.&#xA;Don&amp;rsquo;t bother reading it, it&amp;rsquo;s all gibberish, but here&amp;rsquo;s a good snippet:&lt;/p&gt;&#xA;&lt;p style=&#39;font-size: small; line-height: 50%&#39;&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. &lt;span style=&#39;font-size: smaller&#39;&gt;Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. &lt;span style=&#39;font-size: smaller&#39;&gt;Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. &lt;span style=&#39;font-size: smaller&#39;&gt;Bring to the table win-win survival strategies to ensure proactive domination. &lt;span style=&#39;font-size: smaller&#39;&gt;At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. &lt;span style=&#39;font-size: smaller&#39;&gt;User generated content in real-time will have multiple touchpoints for offshoring. Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

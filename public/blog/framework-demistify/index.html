@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="author" content="Owen Wertzberger" />
+  
+  <meta name="description" content="An exploration of the terminology behind JavaScript frameworks" />
+  
+  <meta name="keywords" content="" />
+  
+  <meta name="fediverse:creator" content="@wheelsbot@wetdry.world" />
+  
+  <meta
+    name="viewport"
+    content="width=device-width,minimum-scale=1,initial-scale=1"
+  />
+  <meta name="generator" content="Hugo 0.147.8">
+
+  <link rel="canonical" href="//localhost:1313/blog/framework-demistify/" />
+
+   <meta property="og:url" content="//localhost:1313/blog/framework-demistify/">
+  <meta property="og:title" content=" What even is a Web Framework anyway?">
+  <meta property="og:description" content="An exploration of the terminology behind JavaScript frameworks">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-11-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-12T00:00:00+00:00">
+    <meta property="article:tag" content="Blog">
+    <meta property="article:tag" content="Webdev">
+    <meta property="article:tag" content="Javascript">
+ 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content=" What even is a Web Framework anyway?">
+  <meta name="twitter:description" content="An exploration of the terminology behind JavaScript frameworks">
+  
+  <meta itemprop="name" content=" What even is a Web Framework anyway?">
+  <meta itemprop="description" content="An exploration of the terminology behind JavaScript frameworks">
+  <meta itemprop="datePublished" content="2024-11-11T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-06-12T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1966">
+  <meta itemprop="keywords" content="Blog,Webdev,Javascript">
+
+  <link rel="stylesheet" href="/css/layout.css" />
+
+  
+  <link rel="stylesheet" href="/css/default-dark.css" />
+   
+
+  <title>
+        What even is a Web Framework anyway?  
+  </title>
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="//localhost:1313/">Wheelsblog V7</a>
+    </div> 
+
+    
+    
+    <a class="nav-item" href="/blog/"><div class="nav-item-title">Blog</div></a>
+    
+    <a class="nav-item" href="/tags/"><div class="nav-item-title">Tags</div></a>
+    
+    <a class="nav-item" href="/archive/"><div class="nav-item-title">Archive</div></a>
+    
+    <a class="nav-item" href="/about/"><div class="nav-item-title">About</div></a>
+    
+
+  </nav>
+
+</div>
+
+</header>
+
+
+<article class="post">
+  <h1 class="title"> What even is a Web Framework anyway?</h1>
+  <div class="metadata">
+    - - -<br />
+    title:  What even is a Web Framework anyway? <br />
+
+    published: 2024-11-11 <br />
+     updated: 2025-06-12
+    <br />
+     
+    <div class="tags">
+      tags: 
+      <div class="tag">
+        <a href="/tags/blog">#blog</a>
+      </div>
+      
+      <div class="tag">
+        <a href="/tags/webdev">#webdev</a>
+      </div>
+      
+      <div class="tag">
+        <a href="/tags/javascript">#javascript</a>
+      </div>
+      
+    </div>
+        - - -<br />
+  </div>
+
+  <div class="content"><p>There&rsquo;s a bit of filler text that I&rsquo;ve seen used a lot in website templates.
+Don&rsquo;t bother reading it, it&rsquo;s all gibberish, but here&rsquo;s a good snippet:</p>
+<p style='font-size: small; line-height: 50%'>Leverage agile frameworks to provide a robust synopsis for high level overviews. <span style='font-size: smaller'>Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. <span style='font-size: smaller'>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. <span style='font-size: smaller'>Bring to the table win-win survival strategies to ensure proactive domination. <span style='font-size: smaller'>At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. <span style='font-size: smaller'>User generated content in real-time will have multiple touchpoints for offshoring. Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</span></span></span></span></span></p>
+<p>Your eyes glaze over after the first sentence, right? It&rsquo;s mind-numbing.
+Deliberately so, I should add. It uses buzzwords that rely on context for
+meaning, but doesn&rsquo;t provide any. Perfect filler text despite being 100%
+grammatically correct. But that first sentence stuck with me because it&rsquo;s
+shockingly close to how web frameworks market themselves.</p>
+<p>They always try to paint themselves as the only product you&rsquo;ll need for web
+development in a way that appeals to business types, but overwhelms anyone who
+might be interested in actually <em>using</em> it. Should we be worried that the most
+powerful people in our society respond best to nonsense word salad that <em>eludes</em>
+to something valuable? Probably, but that can&rsquo;t be solved with a blog post, so
+instead I&rsquo;ll try to demystify some of the marketing-speak that surrounds
+frameworks, JavaScript, and web development in general.</p>
+<h2 id="but-seriously-whats-a-framework">But Seriously, What&rsquo;s a Framework?</h2>
+<p>At its most basic level, a framework is a collection of tools that developers
+use to create and run software on a specific platform. A good example of this
+that ironically has nothing to do with the internet is Microsoft&rsquo;s .NET
+Framework. Funnily enough, Microsoft <strong>also</strong> had a hard time explaining what
+.NET was or why you should want it. So much so that they
+<a href="https://en.wikipedia.org/wiki/Microsoft_.NET_strategy">stopped trying after 3 years</a>.</p>
+<p>In retrospect it&rsquo;s hard to see why Microsoft saw value in pushing .NET to the
+consumer in the first place. Not only was it extremely confusing for those
+without extensive knowledge of the Windows operating system, it was always meant
+to be invisible to the end user. Any research on the topic quickly devolves into
+labyrinthine link-trees and endless acronyms. .NET was Microsoft&rsquo;s
+implementation of
+<a href="https://en.wikipedia.org/wiki/Common_Language_Infrastructure">CLI</a>, and
+included an <a href="https://en.wikipedia.org/wiki/Framework_Class_Library">FCL</a> which
+interacted with the <a href="https://en.wikipedia.org/wiki/Common_Language_Runtime">CLR</a>
+to provide support for <a href="https://en.wikipedia.org/wiki/ASP.NET">ASP</a>,
+<a href="https://en.wikipedia.org/wiki/Windows_Presentation_Foundation">WPF</a>,
+<a href="https://en.wikipedia.org/wiki/Windows_Communication_Foundation">WCF</a>, and
+<a href="https://en.wikipedia.org/wiki/Language_Integrated_Query">LINQ</a>. Clear as mud.
+.NET was an important development in the history of Windows (It&rsquo;s the main
+reason Visual Studio and Windows XP even exist), but it was never going to be
+the selling point Microsoft clearly wanted it to be.</p>
+<p>Web Frameworks, on the other hand, are marketed <strong>way</strong> more. Probably because
+there&rsquo;s a lot more of them and the web isn&rsquo;t nearly as monopolized as the PC
+platform<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Additionally, the web is a lot more versatile than a closed
+platform like Windows. .NET&rsquo;s whole job was to take code, process it, and spit
+out an application that would run the same way on every other system using .NET.
+Web frameworks do the same thing, but for web browsers. When the web was still
+primarily accessed through phone lines, there wasn&rsquo;t a need for frameworks. Why
+bother making things more complicated when developers could comfortably type
+HTML faster than connections could deliver it?</p>
+<p>Frameworks became necessary after JavaScript fundamentally changed what web
+pages were capable of. HTML and CSS are both markup languages, they&rsquo;re not
+<a href="https://en.wikipedia.org/wiki/Turing_machine">Turing Complete</a>. Raw HTML is
+functionally identical to a TXT file, it&rsquo;s just designed to be processed and
+formatted before being presented to the end user. It doesn&rsquo;t &ldquo;execute&rdquo; like a
+high-level programming language would, it&rsquo;s just a document. JavaScript can
+manipulate that document dynamically by adding, removing, and changing sections
+at runtime. An important term to remember here is
+<a href="https://en.wikipedia.org/wiki/Document_Object_Model">DOM</a> (Document Object
+Model). &ldquo;Manipulating the DOM&rdquo; is essentially shorthand for &ldquo;change something in
+the HTML without just editing the HTML directly&rdquo;.</p>
+<h2 id="why-would-i-need-a-framework-when-javascript-already-does-it-all">Why would I need a framework when JavaScript already does it all?</h2>
+<p>JavaScript functionality allows just about anything you can think of to be
+turned into a web app. The downside? Vanilla JavaScript is a confusing mess to
+work with. The language was allegedly thrown together in 10 days and is
+notoriously bad when it comes to handling errors in consistent ways. Combine
+that with <a href="https://en.wikipedia.org/wiki/Just-in-time_compilation">JIT</a> (Just In
+Time) compilation, and JavaScript code is nigh impossible to debug at scale. Web
+Frameworks provide a layer of abstraction between a web app and a browser with
+collections of functions and variables. Now you may be thinking &ldquo;wait that just
+sounds like a library&rdquo;, and if you aren&rsquo;t, congratulations! You&rsquo;re a minority!</p>
+<p>There&rsquo;s a VERY gray area between framework and library, but my favorite
+definition is libraries are things you build <em><strong>with</strong></em>, while frameworks are
+things you build <em><strong>for</strong></em>. You can import jQuery into any old project, but to
+use React functions, you&rsquo;re better off starting over from scratch. This model of
+framework as a platform means people get very attached to specific frameworks,
+as they&rsquo;re functionally new languages and require just as much experience to use
+effectively. But before choosing a framework, there&rsquo;s an even more foundational
+layer to web development you have to consider.</p>
+<h2 id="okay-ill-bite-whats-a-javascript-runtime">Okay, I&rsquo;ll bite, what&rsquo;s a JavaScript Runtime?</h2>
+<p>Technically there&rsquo;s an even <em>more</em> foundational layer called the JavaScript
+<strong>Engine</strong>, but Google&rsquo;s <a href="https://v8.dev/">V8</a> , Mozilla&rsquo;s
+<a href="https://spidermonkey.dev/">SpiderMonkey</a>, and Apple&rsquo;s
+<a href="https://developer.apple.com/documentation/javascriptcore">JavascriptCore</a><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+all operate close enough to each other that it&rsquo;s not worth considering for 99.9%
+of people. The JavaScript <strong>Runtime</strong> refers to the whole environment your code
+runs in. This includes the engine, web APIs, and an event loop<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Here, things
+start getting a little less centralized, as there are 3 runtimes with
+significant support currently on the market.</p>
+<h3 id="nodejs">Node.js</h3>
+<p>The reigning champion and oldest of the 3. It&rsquo;s hard to pitch what makes Node
+special because it&rsquo;s considered the default by every dev tool released
+after 2010. Its biggest strength is compatibility. Its package manager, npm<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>,
+is ubiquitous enough that a major selling point of the other 2 runtimes is
+backwards-compatibility with npm. Node has had a lot of time to grow and mature,
+but that also means it comes with a lot of baggage. The number of people using
+the internet has more than doubled since Node was released, and the amount of
+JavaScript in the median website has more than
+<a href="https://httparchive.org/reports/state-of-javascript#bytesJs">septupled</a><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.
+That&rsquo;s the main reason the other 2 popular runtimes sell themselves as more
+modern and performant alternatives to Node. That, and Node is <em>easily</em> the
+weakest when it comes to mascots, with their Rocket Turtle only being introduced
+in February 2024. At that point, their brand identity was a green hexagon for
+over a decade. No shade towards Rocket Turtle, but he isn&rsquo;t Node, and I doubt he
+ever will be.</p>
+<p><img src="images/node.js_mascot.png" alt="Node&rsquo;s mascot, a turtle with an aviator hat and goggles, riding a rocket like a skateboard" title="Rad dude, probably too rad to be the face of such a monolithic pillar of the web"></p>
+<h3 id="bun">Bun</h3>
+<p>Bun is a JavaScript runtime, package manager, bundler, and tester with the main
+goal of being a drop-in replacement for Node.js. Its selling point is simple:
+speed. One look at their <a href="https://bun.sh/">website</a> confirms this. They&rsquo;re
+really proud of their benchmark scores and are not shy about sharing them. This
+makes my job a lot easier, because what more do I need to say? There&rsquo;s no hidden
+nuance here, you don&rsquo;t need any insight into web development to know that a
+faster runtime is desirable. If you want speed and don&rsquo;t mind the hiccups that
+come with using software that hit 1.0 in September 2023, Bun&rsquo;s the one.</p>
+<p><img src="images/bun-logo.svg" alt="Bun&rsquo;s Logo, a steamed bun with round black eyes and an open, smiling mouth" title="They do a lot of branding based around Bun as in Dumpling, and it works in the context of a JavaScript Bundler, but they occasionally reference Bun as an abbreviation for Bunny. That's the kind of flexibility you need to stand a chance against Node."></p>
+<h3 id="deno">Deno</h3>
+<p>Have you ever looked at something you made and realized that trying to fix it
+would take more work than starting over? Sunk-cost is a powerful deterrent, but
+it didn&rsquo;t stop Ryan Dahl<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> from leaving Node.js to try and de-node the web.
+Hence the name and pronunciation of Deno, a JavaScript runtime looking to solve
+3 big problems with Node: security, complexity, and web compatibility. Security
+is a topic better suited for server admins and professionals, so let&rsquo;s focus on
+the 2 you&rsquo;ll actually interact with.</p>
+<p><img src="images/heaviest-in-the-universe-node-modules.png" alt="Image" title="This one folder is probably the reason .gitignore even exists"></p>
+<p>Node packages are just that, self-contained packages that are all Node projects
+themselves. Any given Node project potentially has hundreds of <code>package.json</code>
+files in them. This can lead to a lot of redundancy, especially when it comes to
+dependency trees. Deno packages usually point to a single TypeScript file that
+provides all necessary functionality. Not only does this reduce complexity, it
+also highlights another problem with Node: It was never meant to run on the Web.</p>
+<p>Node was originally designed as a generalized software solution for running
+JavaScript code. To fit this specification, all dependencies had to be present
+locally. This isn&rsquo;t necessary for servers, where it&rsquo;s assumed that a lot of your
+website is hosted remotely. This network model means that each page can load
+only what is needed, and skip any wasted work that may have come with loading
+parts of Node modules that aren&rsquo;t necessary in a server setting. This web-first
+design also means Deno supports standard web APIs, making remote loading even
+more seamless.</p>
+<p>That may have been more &ldquo;pitching&rdquo; than &ldquo;explaining&rdquo;, but Deno&rsquo;s advantages
+aren&rsquo;t nearly as easy to articulate as Node&rsquo;s decade+ of support and Bun&rsquo;s
+Blazing Benchmarks. The bottom line is that Deno is a more modern alternative to
+Node.js. It&rsquo;s the Vulkan to Node&rsquo;s OpenGL, the Wayland to Node&rsquo;s X11, so if
+you&rsquo;re technically experienced enough to understand either of those analogies, I
+recommend giving Deno a shot. Plus their mascot is easily the best: a cute
+little sauropod chilling in the rain. A+, no notes.</p>
+<p><img src="images/dark-transparent.svg" alt="An image of a long-necked dinosaur with the word &ldquo;DENO&rdquo; next to it" title="It's even poking its little head around the code examples on their website. I like to imagine it's working in the server room, helping with the tall stacks"></p>
+<h2 id="glossary">Glossary</h2>
+<p>Okay, after all that, let&rsquo;s take a second to review terms that will come in
+handy when attempting to decode marketing-speak. All of these obviously have
+different definitions outside of web development, but that kind of specificity
+is for docs, not here.</p>
+<p><strong>ENGINE</strong>: A baseline abstraction layer for JavaScript, allowing it to run in a
+browser.</p>
+<p><strong>RUNTIME</strong>: The environment JavaScript runs in, works closely with the engine
+to connect your code to everything outside of itself.</p>
+<p><strong>PACKAGE MANAGER</strong>: Downloads and installs modules, but can be used outside of
+Node.</p>
+<p><strong>FRAMEWORK</strong>: A larger module that you&rsquo;re expected to build on top of. Defines
+the basic functionality of your webpage.</p>
+<p>So, while your framework is the most flashy component of your JavaScript
+webpage, you need to be aware of the more foundational parts of your tech-stack.
+There are a LOT of frameworks out there, so take some time to consider how they
+might integrate into the other tools you&rsquo;re using. Web development is a
+collaborative process! When someone tries to sell their product as an all-in-one
+solution, know they&rsquo;re really selling other people&rsquo;s work. Stay curious!</p>
+<p>Signing off: Wheelsbot</p>
+<p><del><em>Always on that dang Computer</em></del></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>But you can help
+<a href="https://www.wheelsbot.dev/posts/arch-linux-install-guide/">change that</a>
+today!&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Yes, it&rsquo;s &ldquo;JavascriptCore&rdquo;, not &ldquo;JavaScriptCore&rdquo;. I don&rsquo;t like it any more
+than you do. This is like if Levi-oh-SAH was the correct pronunciation.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>An <a href="https://youtu.be/8aGhZQkoFbQ">equally confusing</a> subject, but for now
+let&rsquo;s just say it&rsquo;s the part of your browser responsible for keeping things
+consistent between you and the server.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Which, rather un-creatively, stands for &ldquo;node package manager&rdquo;&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>For those of you using your brains for more important things than
+remembering number prefixes, that&rsquo;s 7 times.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p>Creator of Node.js and has a
+<a href="https://en.wikipedia.org/wiki/Ryan_Dahl">Wikipedia page</a> shorter than
+<em>this</em> article. My guy just revolutionized the modern internet and then
+proceeded to use it as little as possible. King. Check out his
+<a href="https://tinyclouds.org/">blog</a> if you can, it&rsquo;s nice to see a titan of
+modern web design with a blog that <em>anyone</em> could make.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</div>
+</article>
+
+ 
+   <footer>
+
+  <div class="social-links-footer">
+  
+  <a href="mailto:o.wertzberger@wheelsbot.dev"><div class="social-link">Email</div></a>
+   
+  <a href="https://github.com/wheelsbot7" target="_blank"
+    ><div class="social-link">GitHub</div></a
+  >
+     
+  <a href="https://www.linkedin.com/in/owen-wertzberger-14992b164" target="_blank"
+    ><div class="social-link">LinkedIn</div></a
+  >
+   
+  <a rel="me" href="https://wetdry.world/@wheelsbot" target="_blank"
+    ><div class="social-link">Mastodon</div></a
+  >
+  
+
+  <div class="social-link">
+    
+  </div>
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

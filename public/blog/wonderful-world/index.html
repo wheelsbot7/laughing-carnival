@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="author" content="Owen Wertzberger" />
+  
+  <meta name="description" content="Dotfiles are a fun and infuriating part of Linux. This article will guide you through my own, focusing on Hyprland and Neovim." />
+  
+  <meta name="keywords" content="" />
+  
+  <meta name="fediverse:creator" content="@wheelsbot@wetdry.world" />
+  
+  <meta
+    name="viewport"
+    content="width=device-width,minimum-scale=1,initial-scale=1"
+  />
+  <meta name="generator" content="Hugo 0.147.8">
+
+  <link rel="canonical" href="//localhost:1313/blog/wonderful-world/" />
+
+   <meta property="og:url" content="//localhost:1313/blog/wonderful-world/">
+  <meta property="og:title" content=" The Wonderful World of Dotfiles">
+  <meta property="og:description" content="Dotfiles are a fun and infuriating part of Linux. This article will guide you through my own, focusing on Hyprland and Neovim.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-03-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-19T00:00:00+00:00">
+    <meta property="article:tag" content="Blog">
+    <meta property="article:tag" content="Guide">
+    <meta property="article:tag" content="Linux">
+ 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content=" The Wonderful World of Dotfiles">
+  <meta name="twitter:description" content="Dotfiles are a fun and infuriating part of Linux. This article will guide you through my own, focusing on Hyprland and Neovim.">
+  
+  <meta itemprop="name" content=" The Wonderful World of Dotfiles">
+  <meta itemprop="description" content="Dotfiles are a fun and infuriating part of Linux. This article will guide you through my own, focusing on Hyprland and Neovim.">
+  <meta itemprop="datePublished" content="2025-03-19T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-03-19T00:00:00+00:00">
+  <meta itemprop="wordCount" content="2695">
+  <meta itemprop="keywords" content="Blog,Guide,Linux">
+
+  <link rel="stylesheet" href="/css/layout.css" />
+
+  
+  <link rel="stylesheet" href="/css/default-dark.css" />
+   
+
+  <title>
+        The Wonderful World of Dotfiles  
+  </title>
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="//localhost:1313/">Wheelsblog V7</a>
+    </div> 
+
+    
+    
+    <a class="nav-item" href="/blog/"><div class="nav-item-title">Blog</div></a>
+    
+    <a class="nav-item" href="/tags/"><div class="nav-item-title">Tags</div></a>
+    
+    <a class="nav-item" href="/archive/"><div class="nav-item-title">Archive</div></a>
+    
+    <a class="nav-item" href="/about/"><div class="nav-item-title">About</div></a>
+    
+
+  </nav>
+
+</div>
+
+</header>
+
+
+<article class="post">
+  <h1 class="title"> The Wonderful World of Dotfiles</h1>
+  <div class="metadata">
+    - - -<br />
+    title:  The Wonderful World of Dotfiles <br />
+
+    published: 2025-03-19 <br />
+     
+    <div class="tags">
+      tags: 
+      <div class="tag">
+        <a href="/tags/blog">#blog</a>
+      </div>
+      
+      <div class="tag">
+        <a href="/tags/guide">#guide</a>
+      </div>
+      
+      <div class="tag">
+        <a href="/tags/linux">#linux</a>
+      </div>
+      
+    </div>
+        - - -<br />
+  </div>
+
+  <div class="content"><p>I love it when names have a deeper meaning behind them, both linguistically and
+conceptually. Those etymology charts in online dictionaries always fascinated
+me, like little maps of interpretation. Conceptually, I have SCP-4000 to thank
+for my love of name-based magic. Oh, sorry I meant to say
+<span style='color:green; font-weight: bold;'>THAT ONE PLACE WITH THE FAIRIES IN
+A FOREST THAT CAN&rsquo;T BE REFERRED TO WITH THE SAME NAME TWICE</span>.</p>
+<p>But as you&rsquo;ve probably guessed, today I want to talk about something named so
+literally I can&rsquo;t help but love it. There&rsquo;s nothing to read into, nothing to
+extract hidden meaning from. It&rsquo;s as subtle as a sledgehammer and as elegant as
+a cinder-block. Dotfiles are called that because hidden items in a file manager
+are prefixed with a period. Personally, this radical simplicity is a breath of
+fresh air. Not just the name, but hiding sensitive files behind such a
+straightforward barrier. Windows requires you to type out <code>%appdata%</code> every
+single time, and sometimes it&rsquo;s in <code>%localappdata%</code> or the Documents folder or
+some other app-specific folder. I&rsquo;ve been confused by Linux&rsquo;s lack of a &ldquo;Program
+Files&rdquo; folder but it&rsquo;s worth it if I can find the files I&rsquo;ll actually edit.</p>
+<p>The main strength of Linux has always been its customization, but that
+inevitably scares off people who don&rsquo;t care. It&rsquo;s like that old community
+in-joke: &ldquo;The best part of Linux is that you can customize anything, the worst
+part of Linux is that you <em>have to</em> customize <em>everything</em>&rdquo;. Thankfully, the
+existence of a dotfiles folder partially negates this potential hurdle by making
+it trivial to copy someone else&rsquo;s setup. Which brings me to the reason I wanted
+to make this post, and the software I&rsquo;m currently writing in&hellip;</p>
+<h2 id="neovim">Neovim</h2>
+<p>Neovim is a heavily refactored fork of
+<a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a> , which was a clone of
+<a href="https://en.wikipedia.org/wiki/Vi_(text_editor)">VI</a>, which was the visual
+mode of a command line text editor called
+<a href="https://en.wikipedia.org/wiki/Ex_(text_editor)">EX</a>, which was an optimized
+version of <a href="https://en.wikipedia.org/wiki/Ed_(software)">ED</a>, which was a Unix
+port of <a href="https://en.wikipedia.org/wiki/QED_(text_editor)">QED</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. This is
+relevant because beyond modernizing an ancient program, Neovim was designed for
+extensibility. Fitting considering how far back its roots stretch. And make no
+mistake, those roots are still there. EX was a complete rewrite, so only design
+decisions remain from ED and QED, but beyond that? There&rsquo;s C code from the 70&rsquo;s
+running under the hood, providing the exact same functionality it did back then.
+Imagine if all software preservation was this easy! No emulation, no
+compatibility layers, no nothing, just CPU instructions triggered on key press.</p>
+<p>Anyway, the point of going over Neovim&rsquo;s dumb-as-bricks foundations was to show
+how easily dotfiles can transform a program into something unrecognizable (and
+if you aren&rsquo;t careful, something far less usable). As tempting as it is to copy
+and paste someone else&rsquo;s setup, it really pays off to know the ins and outs of
+whatever program you&rsquo;re configuring. That&rsquo;s always the tradeoff, technical
+experience is never &ldquo;optional&rdquo;, it just might take a while before it becomes
+mandatory. Neovim&rsquo;s extensibility means that pre-configured setups aren&rsquo;t just
+appealing, they&rsquo;re almost required. Thankfully, someone smarter than me <em>also</em>
+noticed this and created a set of dotfiles that pulls double-duty as both a
+functional configuration of Neovim, and an annotated guide to every part of the
+program.</p>
+<h3 id="kickstartnvim">Kickstart.nvim</h3>
+<p><a href="https://github.com/nvim-lua/kickstart.nvim">Kickstart.nvim</a> is a Neovim
+configuration that I think everyone should use, at least to start with. A common
+sentiment from more technically experienced folks towards new users is RTFM, or
+Read The Fucking Manual. Back when you installed software from physical media,
+this was more or less the expectation. No Clippy, no labels or visible keymaps,
+you were just expected to spend a week going through &gt;100 pages of technical
+documentation covering every single function and use case. Kickstart.nvim
+preserves some of this philosophy by heavily relying on the <kbd>leader</kbd> +
+<kbd>s</kbd> + <kbd>h</kbd> command, which pulls up a search box that scrubs the
+built-in manual for more detailed documentation on whatever you might need help
+with. The only &ldquo;required reading&rdquo; is presented in a simple, no-frills, Mike
+Ehrmantraut &ldquo;Here&rsquo;s what you&rsquo;re gonna do&rdquo; format.</p>
+
+<blockquote class="alert alert-tip">
+  <p class="alert-heading">
+     Tip 
+  </p>
+  <p>So here&rsquo;s what you&rsquo;re gonna do. You&rsquo;re gonna go to Kickstart.nvim&rsquo;s GitHub
+page. You&rsquo;re gonna fork the repository, just like it tells ya. You&rsquo;re gonna
+install the dependencies listed in the README, doesn&rsquo;t matter which OS you&rsquo;re
+on, there&rsquo;s options for all of &rsquo;em. You&rsquo;re gonna find your Neovim config
+folder and clone your forked repository right in there, nice and clean. You&rsquo;re
+gonna open up your favorite terminal and type &ldquo;nvim&rdquo;, if any errors pop up,
+you mucked something up. No big deal, just go back to the README and make sure
+you did every step just like it told ya. You&rsquo;re gonna keep doing that, and
+once you&rsquo;re done, you&rsquo;re gonna type &ldquo;:Tutor&rdquo;. You&rsquo;re gonna do what it says
+until you got a basic grasp on Vim-style editing. Once you&rsquo;re confident in
+that department, you&rsquo;re gonna type &ldquo;:e $MYVIMRC&rdquo;. From there, you read what it
+tells you, write it down if you have to, just pay attention and restart after
+any changes to avoid pouring over every line looking for which one caused an
+error. You got all that?</p>
+</blockquote>
+
+<p><img src="images/mike-e.jpg" alt="Mike Ehrmantraut from Breaking Bad"></p>
+<p>Well you better have, because up next are the advanced setups with a ton of
+pre-configured features that are definitely more usable out of the box, but work
+best as examples or inspiration, not an all-in-one shortcut.</p>
+<h3 id="nvchad">NVChad</h3>
+<p><img src="images/nvchad.webp" alt="NVChad&rsquo;s default UI, editing a Typescript file"></p>
+<p>A wildly popular choice, NVChad has a lot going for it. It&rsquo;s beautiful, for one
+thing. It&rsquo;s clear a lot of work was put into their custom base46 theming plugin.
+Their custom UI plugin as a whole does a lot of work in turning Neovim into
+something that <em>looks</em> like an IDE. Let&rsquo;s see the docs page for it!</p>
+<p><img src="images/nvui.png" alt="NVChad&rsquo;s docs page for NVUI with a single bullet point reading &ldquo;Read :h nvui&rdquo;"></p>
+<p>Oh&hellip; That&rsquo;s helpful. Well what about base46? The theming plugin must have some
+stuff about custom themes and whatnot, right?</p>
+<p><img src="images/base46.png" alt="NVChad&rsquo;s docs page for base46 with a single bullet point reading &ldquo;Read :h nvui.base46&rdquo;"></p>
+<p>Huh.</p>
+<p>This is very much a &ldquo;me thing&rdquo; but this docs page really turned me off on
+NVChad. The use of custom plugins for basic features is cool to see, they very
+much do what they&rsquo;re supposed to, but it also reminds me of the walled gardens I
+turned to Neovim to avoid. If you want to get base46 working with any other
+plugin, you&rsquo;ll find that NVChad doesn&rsquo;t mix well with anything but itself. This,
+to be clear, is totally fine on its own. NVChad already provides more than
+enough, and I can say you&rsquo;ll have a fine experience even if you only use default
+plugins. It&rsquo;s just not for me. Mostly because <em>another</em> setup proves default
+functionality and customization are not mutually exclusive.</p>
+<h3 id="lazyvim">LazyVim</h3>
+<p><img src="images/lazyvim.png" alt="LazyVim&rsquo;s default start screen, showing a list of options with their respective keybind"></p>
+<p>LazyVim is developed by the creator of the Lazy.nvim plugin manager, and was
+designed explicitly to provide easy customization without starting from scratch.
+The plugin manager itself is already the most popular one and is considered the
+default by most plugin developers. Compatibility and extensibility are the real
+strengths of this setup. Really, there&rsquo;s not much else to go over, everything
+else that makes LazyVim great is just the inclusion of things I complained about
+NVChad missing. Still check out kickstart first, but after that, I
+wholeheartedly recommend LazyVim.</p>
+<p>This whole &ldquo;convenience vs customization&rdquo; dichotomy is a common theme in
+dotfiles. Hell, it&rsquo;s a theme in software as a whole. Arch is so customizable it
+doesn&rsquo;t even ship with a GUI by default, which is why EndeavorOS and Manjaro
+exist to fill that niche. It really exists on a sliding scale. NVChad is
+convenient <em>because</em> it&rsquo;s not very customizable, and vice versa for kickstart.
+LazyVim just happens to strike a balance that appeals to me. Don&rsquo;t take my
+recommendation at face value. Ask yourself what you want out of a Neovim config
+and go from there. Or try them all and decide later! Another advantage of
+dotfiles is dead-simple backups and restores. LazyVim even includes a simple
+bash script that will do it automatically:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># required</span>
+</span></span><span style="display:flex;"><span>mv ~/.config/nvim<span style="color:#f92672">{</span>,.bak<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># optional but recommended</span>
+</span></span><span style="display:flex;"><span>mv ~/.local/share/nvim<span style="color:#f92672">{</span>,.bak<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>mv ~/.local/state/nvim<span style="color:#f92672">{</span>,.bak<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>mv ~/.cache/nvim<span style="color:#f92672">{</span>,.bak<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>I say this because the next and last example of dotfiles I&rsquo;d like to go over is
+a lot harder to swap out whenever you please, because it configures something
+much more fundamental than a text editor.</p>
+<h2 id="hyprland">Hyprland</h2>
+<p><img src="images/hypr.png" alt="An example themed Hyprland configuration"></p>
+<p>Hyprland is a lot harder to configure on your own, as it ships with no default
+keybinds. Every single action must be set manually, and it&rsquo;s hard to know which
+actions will be used more often without already having experience navigating a
+tiling window manager. This is where pre-configured dotfiles would be really
+useful, but the problem there is that each configuration has different bindings
+for simple actions with the only common link being the use of the &ldquo;Meta&rdquo;<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> key
+as a modifier. That much makes sense, that button is normally only used for
+basic desktop environment actions, and Hyprland is effectively filling that
+role. But if you look at the list of official and unofficial desktop
+environments on
+<a href="https://wiki.archlinux.org/title/Desktop_environment">ArchWiki</a>, you won&rsquo;t find
+Hyprland there. That&rsquo;s because the definition of a desktop environment is really
+fuzzy and despite containing its own ecosystem of utilities, Hyprland is just a
+lot easier to categorize as a Wayland compositor. This is <em>way</em> more specific,
+as it involves the bare-metal processes that decide which pixels light up and
+when.</p>
+<p>Writing a custom config for something so fundamental may seem daunting or
+dangerous, but Wayland compositors are very easy to replace. Even if you mess
+something up, the damage won&rsquo;t spread anywhere else, and you can easily boot
+into a different compositor to fix things. There are 3 pre-configured setups I&rsquo;d
+like to take a look at, just like Neovim. But unlike Neovim, the whole
+&ldquo;convenience vs customization&rdquo; scale doesn&rsquo;t stretch as far. Any DIY experience
+similar to Kickstart.nvim would just have you staring at a blank screen, and
+that&rsquo;s no way to learn. Instead, a more useful scale for Hyprland is &ldquo;Dazzling
+vs. Daily Driver&rdquo;.</p>
+<p>Honestly I&rsquo;m surprised it took me this long to talk about ricing, as it&rsquo;s a
+pretty important part of dotfiles. The term is an acronym from car culture,
+where RICE stands for &ldquo;Race Inspired Cosmetic Enhancement&rdquo;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. A good example
+is when you put a massive, flashy spoiler on an ordinary vehicle you&rsquo;d find in
+an office parking lot. Obviously your 2008 Honda Civic doesn&rsquo;t need any
+downforce, it&rsquo;s not gonna lose grip going 70mph in a straight line. But because
+high-performance racing cars have those features, they end up being desirable
+even without the benefit it was designed to provide.</p>
+<p>Hyprland ricing is kind of like that, because while many features are designed
+for productivity, their inaccessible and technical nature can make you feel more
+experienced, even if it&rsquo;s not necessarily making you more productive. The first
+config I want to cover is literally called &ldquo;My Linux For Work&rdquo;, and there are
+still plenty of unnecessary flourishes that serve exclusively to make the
+desktop more aesthetically pleasing.</p>
+<h3 id="ml4w-my-linux-for-work">ML4W (My Linux For Work)</h3>
+<p><img src="images/ML4W.png" alt="The ML4W desktop with a file explorer, terminal, and 2 configuration apps open"></p>
+<p>This config is firmly planted on the &ldquo;Daily Driver&rdquo; side of the spectrum. I
+mean, you saw the title, it had to be abbreviated because who has the time to
+type out &ldquo;My Linux For Work&rdquo; every time? This is a busy config for busy people.
+But at the same time, the main reason tiling window managers are generally
+faster is keyboard shortcuts, and if you&rsquo;re coming at this from a work
+perspective, you&rsquo;re not gonna put aside an hour to learn how to use something
+you don&rsquo;t technically need. Maybe this is biased from years of working with
+boomers who never knew you could save a document with <kbd>CTRL</kbd> +
+<kbd>S</kbd>, but the point still stands that if you expect people to use
+something for work, you can&rsquo;t just chuck a manual at them and leave them to the
+wolves.</p>
+<p>This config comes with 3 main convenience tools: a configuration GUI app, a
+dedicated keybind for searching keybinds, and a functional top-bar that ensures
+every essential action is still doable with just a mouse. This might seem
+similar to NVChad&rsquo;s walled garden approach, but the backend here isn&rsquo;t some
+bespoke system, all it does is save whatever you punch into the inputs as
+<code>~/.config/hypr/hyprland.conf</code>. It&rsquo;s the thinnest possible layer between the
+user and their dotfiles, which is how it should be! My only problem with this
+system is how it gets around the <code>.config</code> folder being hidden by default. In
+order to have everything visible, it places a shortcut<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> in your <em>actual</em>
+.config folder that points to an entirely new folder in the user&rsquo;s home
+directory.</p>
+<p>But, ultimately, this doesn&rsquo;t bother me nearly as much as NVChad. This bit of
+restructuring can easily be worked around or fully reversed. This is still a
+configuration for Hyprland, it&rsquo;s not trying to add exclusive systems or deeply
+integrated apps like a fully-fledged desktop environment. That distinction goes
+to the most popular Hyprland config on GitHub, and one that went through a major
+restructuring while I was writing this.</p>
+<h3 id="hyde-formerly-hyprdots">HyDE (formerly Hyprdots)</h3>
+<p><img src="images/theme_mocha_1.png" alt="HyDE&rsquo;s desktop with the Catppuccin Mocha color palette applied"></p>
+<p>I gave this one a shot when it was still Hyprdots, and fully bounced off of it
+when I saw that one of the themes was called &ldquo;edge-runners&rdquo; and looked like
+this:</p>
+<p><img src="images/theme_cedge_1.png" alt="HyDE&rsquo;s desktop with the edge-runners theme applied"></p>
+<p>Looking back on it, that was pretty shallow of me, but the sentiment wasn&rsquo;t
+necessarily faulty. There are a ton of rices out there that are fully themed
+around a specific media property (usually anime), and that&rsquo;s a pretty reliable
+sign that they were made specifically for 1 screenshot before reverting back to
+something actually usable. Far from ML4W, this is closer to ML4Reddit. But it
+seems this focus on style payed off, since their now abandoned GitHub repository
+currently sits at 8.7k stars. While I wasn&rsquo;t looking, it appears the original
+creator went radio silent and the only collaborator left forked the project with
+a rebrand. They&rsquo;re currently putting the dotfiles through a major tune-up with a
+clear plan moving forward, so give it a look if you know your way around
+dotfiles or shell scripts, they could use the extra hands.</p>
+<p>Anyway, since I am nothing if not predictable, there&rsquo;s a third option I
+personally use and that I think bridges the gap between form and function in a
+way that makes it easy to recommend. To avoid repetition, I&rsquo;ll try to write the
+next section as a series of Haikus. Predictability was never in the cards.</p>
+<h3 id="kools-hyprland-dots">KooL&rsquo;s Hyprland Dots</h3>
+<p><img src="images/Sample-Tokyo-waybar.png" alt="KooL&rsquo;s Hyprland Dots Desktop"></p>
+<p>This one&rsquo;s really fun</p>
+<p>It&rsquo;s easy to customize</p>
+<p>And easy to use</p>
+<hr>
+<p>Works on more than Arch</p>
+<p>Nix, Fedora, Ubuntu</p>
+<p>Even Tumbleweed</p>
+<hr>
+<p>No custom apps here</p>
+<p>Just a bunch of helper scripts</p>
+<p>That are bound to keys</p>
+<hr>
+<p>Also I&rsquo;m biased</p>
+<p>I contributed some code</p>
+<p>I love open source</p>
+<p><img src="images/commit_history.png" alt="A commit graph showing 2 commits. The scale of the graph is so large that 2 commits doesn&rsquo;t even occupy one pixel"></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The phenomenon of dotfiles exemplifies my favorite part of open source. People
+can just share what works for them and you can yank it for yourself, tear out
+all the parts you don&rsquo;t like, and add whatever you want! It also just feels
+great after years of putting up with a bunch of little annoyances with Windows
+that Microsoft wouldn&rsquo;t let me fix. No wrestling with OneDrive, Edge, or
+Updates, and if I <strong>do</strong> have to mess with something, there&rsquo;s not a
+multi-billion dollar corporation working to make it harder. I will take 1000
+dependency conflicts over 1 mandatory update every time.</p>
+<p>Signing off: Wheelsbot</p>
+<p><del><em>Down in the .conf mines, and the shift never ends.</em></del></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Which stands for Quick EDitor, if you were wondering.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Sidenote to this sidenote, but I didn&rsquo;t expect so many car terms to end up
+in this post. Guess there&rsquo;s a lot in common between 2 groups obsessed with
+optimizing a machine past the point of practicality.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Also called the &ldquo;Super&rdquo; key, but more easily recognizable as the Windows key&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>It&rsquo;s worth mentioning that this is a post-hoc acronym. It&rsquo;s generally agreed
+that it&rsquo;s called &ldquo;ricing&rdquo; because it sounds like racing, and the practice
+started in Asian countries<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>Technically a &ldquo;symlink&rdquo;, meaning symbolic link, but it&rsquo;s basically the same
+thing. Symlink just sounds cooler and brings to mind the image of a portal
+connecting 2 points in your files. I guess it just feels more concrete when
+you can <code>cd</code> through a shortcut instead of just double-clicking it.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</div>
+</article>
+
+ 
+<div class="related-content">
+  
+  <div class="title">Related content</div>
+  <ul>
+    
+    <li><a href="/blog/framework-demistify/">What even is a Web Framework anyway?</a></li>
+    
+    <li><a href="/blog/fedorafortinet/">Fedora fortinet install guide</a></li>
+    
+    <li><a href="/blog/archinstall/">The easy way to install Arch</a></li>
+    
+  </ul>
+  
+</div>
+
+   <footer>
+
+  <div class="social-links-footer">
+  
+  <a href="mailto:o.wertzberger@wheelsbot.dev"><div class="social-link">Email</div></a>
+   
+  <a href="https://github.com/wheelsbot7" target="_blank"
+    ><div class="social-link">GitHub</div></a
+  >
+     
+  <a href="https://www.linkedin.com/in/owen-wertzberger-14992b164" target="_blank"
+    ><div class="social-link">LinkedIn</div></a
+  >
+   
+  <a rel="me" href="https://wetdry.world/@wheelsbot" target="_blank"
+    ><div class="social-link">Mastodon</div></a
+  >
+  
+
+  <div class="social-link">
+    
+  </div>
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+
