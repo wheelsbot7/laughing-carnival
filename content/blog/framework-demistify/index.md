@@ -1,5 +1,5 @@
 ---
-title: "What even is a Web Framework anyway?"
+title: " What even is a Web Framework anyway?"
 date: 2024-11-11
 publishDate: 2024-11-11
 lastmod: 2025-06-12

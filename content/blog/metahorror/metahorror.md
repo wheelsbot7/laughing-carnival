@@ -19,9 +19,7 @@ description:
   Written 1 year before the release of DELTARUNE Chapters 3 and 4."
 ---
 
-{{ < ico mdi eye > }}
-
-<!--more-->
+{{< ico mdi eye >}}
 
 > [!NOTE]
 >

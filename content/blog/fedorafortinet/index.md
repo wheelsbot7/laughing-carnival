@@ -1,5 +1,5 @@
 ---
-title: "Fedora fortinet install guide"
+title: " Fedora fortinet install guide"
 date: 2024-10-08
 publishDate: 2024-10-08
 lastmod: 2024-10-08

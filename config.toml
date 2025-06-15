@@ -1,3 +1,11 @@
+[module]
+[[module.imports]]
+path = 'github.com/hugomods/icons/vendors/mdi'
+[[module.imports]]
+path = 'github.com/hugomods/icons/vendors/font-awesome'
+[[module.imports]]
+path = 'github.com/hugomods/icons/vendors/simple-icons'
+
 baseurl = "/"
 title = "Hugo site"
 copyright = "Copyright (c) 2025, all rights reserved."
@@ -45,25 +53,25 @@ style = "monokai" # dark themes: monokai, api, fruity, native, rrt, swapoff ... 
 [params.author]
 name = "Owen Wertzberger"
 intro = """\
-    'Personal blog powered by [hugo](https://gohugo.io/), an open-source static site generator.
+Personal blog powered by [hugo](https://gohugo.io/), an open-source static site generator.
   """
 
 [params.meta]
 keywords = ""
 description = "Personal blog."
 [params.meta.fediverse]
-creator = "@username@mastodon.server" # https://blog.joinmastodon.org/2024/07/highlighting-journalism-on-mastodon/
+creator = "@wheelsbot@wetdry.world" # https://blog.joinmastodon.org/2024/07/highlighting-journalism-on-mastodon/
 
 [params]
 mainSections = ['blog']
 email = "o.wertzberger@wheelsbot.dev"
-github = "23087147"
+github = "wheelsbot7"
 #gitlab = "gitlab id"
 #twitter = "twitter id"
-linkedin = "14992b164"
+linkedin = "owen-wertzberger-14992b164"
 theme_colors = "default-dark"
-enable_separate_main_page = true # enable a separate main page with author intro and recent posts instead of the list of posts
-generate_opengraph_image = false # enable opengraph image auto generation
+enable_separate_main_page = true        # enable a separate main page with author intro and recent posts instead of the list of posts
+generate_opengraph_image = false        # enable opengraph image auto generation
 
 [params.mastodon] # https://joinmastodon.org/verification
 username = "wheelsbot"

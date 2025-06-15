@@ -1,5 +1,5 @@
 ---
-title: "The easy way to install Arch"
+title: " The easy way to install Arch"
 date: 2024-08-05
 publishDate: 2024-08-05
 lastmod: 2024-08-05
