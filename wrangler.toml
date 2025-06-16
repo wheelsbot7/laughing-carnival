@@ -1,0 +1,6 @@
+name = "my-worker"
+compatibility_date = "2025-04-01"
+workers_dev = true
+[assets]
+directory = "./public/"
+not_found_handling = "404-page"
