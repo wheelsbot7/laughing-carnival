@@ -19,8 +19,6 @@ description:
   Written 1 year before the release of DELTARUNE Chapters 3 and 4."
 ---
 
-{{< ico mdi eye >}}
-
 > [!NOTE]
 >
 > This post was written in 2024 after reading SCP-2614 and watching Mollystar's
