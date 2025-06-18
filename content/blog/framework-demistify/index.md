@@ -16,6 +16,8 @@ description: "An exploration of the terminology behind JavaScript frameworks"
 draft: false
 ---
 
+<!--markdownlint-disable MD033 MD013 -->
+
 There's a bit of filler text that I've seen used a lot in website templates.
 Don't bother reading it, it's all gibberish, but here's a good snippet:
 

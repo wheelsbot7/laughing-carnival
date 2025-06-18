@@ -18,6 +18,8 @@ description:
 draft: false
 ---
 
+<!--markdownlint-disable MD029 MD033 MD013-->
+
 I love it when names have a deeper meaning behind them, both linguistically and
 conceptually. Those etymology charts in online dictionaries always fascinated
 me, like little maps of interpretation. Conceptually, I have SCP-4000 to thank
