@@ -46,7 +46,7 @@ existence of a dotfiles folder partially negates this potential hurdle by making
 it trivial to copy someone else's setup. Which brings me to the reason I wanted
 to make this post, and the software I'm currently writing in...
 
-## Neovim
+##  Neovim
 
 Neovim is a heavily refactored fork of
 [Vim](<https://en.wikipedia.org/wiki/Vim_(text_editor)>) , which was a clone of
@@ -181,7 +181,7 @@ I say this because the next and last example of dotfiles I'd like to go over is
 a lot harder to swap out whenever you please, because it configures something
 much more fundamental than a text editor.
 
-## Hyprland
+##  Hyprland
 
 ![An example themed Hyprland configuration](images/hypr.png)
 
