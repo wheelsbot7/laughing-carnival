@@ -29,6 +29,12 @@ weight = -100
 identifier = "archive"
 url = "/archive/"
 
+[[menu.main]]
+name = "Search"
+weight = -90
+identifier = "search"
+url = "/search/"
+
 [taxonomies]
 archive = "archive"
 blog = "blog"
