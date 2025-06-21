@@ -1,5 +1,7 @@
 ---
-title: " The easy way to install Arch"
+title: "The easy way to install Arch"
+params:
+  icon: " "
 date: 2024-08-05
 publishDate: 2024-08-05
 lastmod: 2024-08-05

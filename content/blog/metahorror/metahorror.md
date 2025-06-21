@@ -1,5 +1,7 @@
 ---
-title: " Metahorror"
+title: "Metahorror"
+params:
+  icon: " "
 date: 2025-06-09T08:54:57-04:00
 publishDate: 2025-06-09T08:54:57-04:00
 lastmod: 2025-06-09T08:54:57-04:00

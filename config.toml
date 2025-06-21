@@ -1,5 +1,5 @@
 baseurl = "/"
-title = "Hugo site"
+title = "Wheelsblog V7"
 copyright = "Copyright (c) 2025, all rights reserved."
 languageCode = "en-US"
 canonifyurls = true
@@ -68,6 +68,7 @@ github = "wheelsbot7"
 #twitter = "twitter id"
 linkedin = "owen-wertzberger-14992b164"
 theme_colors = "default-dark"
+icon = " "
 enable_separate_main_page = true        # enable a separate main page with author intro and recent posts instead of the list of posts
 generate_opengraph_image = false        # enable opengraph image auto generation
 

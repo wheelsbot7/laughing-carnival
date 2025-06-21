@@ -20,6 +20,9 @@ jobs:
       - name: Build Hugo Site
         run: hugo --minify --gc
 
+      - name: Index with Pagefind
+        run: npx pagefind --site "public"
+
       - name: Publish to Cloudflare Workers Site
         uses: cloudflare/wrangler-action@v3
         with:

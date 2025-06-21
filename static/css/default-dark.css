@@ -12,6 +12,11 @@
   --border-color: #000000;
 }
 
+.icon-glow {
+  color: var(--main-sec);
+  filter: drop-shadow(0 0 3px var(--main-sec));
+}
+
 body {
   background: var(--main-bg-color);
   color: var(--main-text);
