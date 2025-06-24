@@ -18,7 +18,7 @@ jobs:
           hugo-version: "0.147.8"
 
       - name: Build Hugo Site
-        run: hugo --minify --gc
+        run: hugo env && hugo --minify --gc
 
       - name: Index with Pagefind
         run: npx pagefind --site "public"
