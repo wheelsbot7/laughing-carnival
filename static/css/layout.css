@@ -1,38 +1,45 @@
 @font-face {
-	font-family: "Geist";
-	src: url("/fonts/Geist.woff2") format("woff2");
-	font-weight: 100 900;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Geist";
+  src: url("/fonts/Geist.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "Geist Mono";
-	src: url("/fonts/GeistMono.woff2") format("woff2");
-	font-weight: 100 900;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "Inclusive_Sans";
-	src: url("/fonts/InclusiveSans-Regular.ttf") format("truetype");
-	font-weight: 100 900;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Inclusive_Sans";
+  src: url("/fonts/InclusiveSans-Regular.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/fonts/UbuntuNerdFont-Regular.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
-	font-family: "Ubuntu";
-	src: url("/fonts/UbuntuNerdFont-Regular.ttf") format("truetype");
-	font-weight: 100 900;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Atkynson";
+  src: url("/fonts/AtkynsonNerdFont-Regular.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-  font-family: Ubuntu, sans-serif;
+  font-family: Atkynson, sans-serif;
   counter-reset: heading;
   margin: 0;
 }
@@ -79,27 +86,34 @@ p {
   line-height: 1.6em;
 }
 
-h1 { font-size: 2em;
-     font-weight: bold;
-     margin-block: 0.67em;
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-block: 0.67em;
 }
-h2 { font-size: 1.5em;
-     font-weight: bold;
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
 }
-h3 { font-size: 1.17em;
-     font-weight: bold;
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
 }
-h4 { font-size: 1.12em;
-     font-weight: bold;
+h4 {
+  font-size: 1.12em;
+  font-weight: bold;
 }
-h5 { font-size: .83em;
-     font-weight: bold;
+h5 {
+  font-size: 0.83em;
+  font-weight: bold;
 }
-h6 { font-size: .75em;
-     font-weight: bold;
+h6 {
+  font-size: 0.75em;
+  font-weight: bold;
 }
 
-a:active, a:focus {
+a:active,
+a:focus {
   outline-style: solid;
   outline-width: thin;
 }
@@ -140,11 +154,11 @@ pre {
 }
 
 code {
-  white-space: pre-wrap;       /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
   line-height: 1.6em;
 }
 
@@ -155,10 +169,10 @@ blockquote {
   margin-right: 0.8em;
 }
 
-th, td {
+th,
+td {
   padding: 0.5em;
 }
-
 
 /* site title  */
 .siteTitle {
@@ -183,7 +197,7 @@ th, td {
   text-align: center;
 }
 
-.post .content{
+.post .content {
   padding: 1em;
 }
 
@@ -192,31 +206,31 @@ th, td {
 }
 
 .post {
-  margin-top : 1.5em;
-  margin-bottom : 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
-.post .content h1{
+.post .content h1 {
   margin: 1.2em 0em;
 }
 
-.post .content h2{
+.post .content h2 {
   margin: 1.2em 0em;
 }
 
-.post .content h3{
+.post .content h3 {
   margin: 1.2em 0em;
 }
 
-.post .content h4{
+.post .content h4 {
   margin: 1.2em 0em;
 }
 
-.post .content h5{
+.post .content h5 {
   margin: 1.2em 0em;
 }
 
-.post .content p{
+.post .content p {
 }
 
 .post-footer-data {
@@ -276,14 +290,14 @@ th, td {
 
 .content-item {
   margin-top: 0.5em;
-  padding: 0.1em 0.3em 0.5em 0.3em
+  padding: 0.1em 0.3em 0.5em 0.3em;
 }
 
-.content-item .meta{
+.content-item .meta {
   margin-top: 0.5em;
   padding-top: 0.5em;
   display: -webkit-flex;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   font-size: 0.7em;
@@ -465,10 +479,10 @@ th, td {
 
 /* micro post */
 
-.post .micro-content{
+.post .micro-content {
   font-size: 1.1em;
-  padding-left : 1em;
-  padding-right : 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .micro-footer-data {
@@ -490,7 +504,7 @@ th, td {
   padding-left: 1em;
 }
 
-.micro-footer-data .tags{
+.micro-footer-data .tags {
   display: flex;
   flex-wrap: wrap;
   padding-left: 1em;
@@ -527,7 +541,7 @@ th, td {
 .post-preview .summary p {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
-  margin-inline-start: 0.em;
+  margin-inline-start: 0em;
   margin-inline-end: 0em;
 }
 
@@ -583,7 +597,7 @@ th, td {
 
 .rmore {
   margin-top: 0.5em;
-  white-space:nowrap;
+  white-space: nowrap;
   text-align: right;
 }
 
@@ -649,9 +663,9 @@ th, td {
 }
 
 .sitemap {
-    margin: auto;
-    width: 50%;
-    font-size: 1.4em;
+  margin: auto;
+  width: 50%;
+  font-size: 1.4em;
 }
 
 .__h_instagram .card-header {
@@ -681,19 +695,18 @@ th, td {
 
 .recent-post-item {
   display: -webkit-flex;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 1em;
 }
 
-.recent-post-item .date{
+.recent-post-item .date {
   text-align: right;
-  display:inline;
+  display: inline;
 }
 
 @media only screen and (min-width: 400px) {
-
   nav {
     flex-flow: row wrap;
   }
@@ -732,13 +745,12 @@ th, td {
   }
 }
 
-
 .alert-warning {
   padding-top: 0.01em;
   padding-bottom: 0.01em;
 }
 
-.alert-warning .alert-heading{
+.alert-warning .alert-heading {
   font-weight: bold;
 }
 
@@ -747,7 +759,7 @@ th, td {
   padding-bottom: 0.01em;
 }
 
-.alert-caution .alert-heading{
+.alert-caution .alert-heading {
   font-weight: bold;
 }
 
@@ -756,7 +768,7 @@ th, td {
   padding-bottom: 0.01em;
 }
 
-.alert-important .alert-heading{
+.alert-important .alert-heading {
   font-weight: bold;
 }
 
@@ -765,7 +777,7 @@ th, td {
   padding-bottom: 0.01em;
 }
 
-.alert-note .alert-heading{
+.alert-note .alert-heading {
   font-weight: bold;
 }
 
@@ -774,7 +786,7 @@ th, td {
   padding-bottom: 0.01em;
 }
 
-.alert-tip .alert-heading{
+.alert-tip .alert-heading {
   font-weight: bold;
 }
 
@@ -791,7 +803,8 @@ th, td {
 }
 
 /* target the details element */
-details { }
+details {
+}
 
 /* target the summary element */
 details > summary {
