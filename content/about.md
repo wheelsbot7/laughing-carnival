@@ -5,13 +5,12 @@ menu = "main"
 weight = 100
 +++
 
-[Hugo](http://gohugo.io/) is a static site engine written in Go.
+This blog uses a modified version of
+[Hugo-dusk](https://github.com/gyorb/hugo-dusk). The modified source code can be
+found [on GitHub](https://github.com/wheelsbot7/laughing-carnival).
 
-It makes use of a variety of open source projects including:
+Links:
 
-- [Cobra](https://github.com/spf13/cobra)
-- [Viper](https://github.com/spf13/viper)
-- [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-- [Cast](https://github.com/spf13/cast)
-
-Learn more and contribute on [GitHub](https://github.com/spf13).
+- [ GitHub](https://github.com/wheelsbot7)
+- [ BlueSky](https://bsky.app/profile/wheelsbot.dev)
+- [ LinkedIn](https://www.linkedin.com/in/owen-wertzberger-14992b164/)
