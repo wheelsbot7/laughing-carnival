@@ -2,17 +2,20 @@
 title: "Why ULTRAKILL's Story is Worth Paying Attention To"
 params:
   icon: "󰈈 "
-date: 2025-06-21T05:43:56-04:00
-publishDate: 2025-06-21T05:43:56-04:00
-lastmod: 2025-06-21T05:43:56-04:00
+date: 2025-06-25T05:43:56-04:00
+publishDate: 2025-06-25T05:43:56-04:00
+lastmod: 2025-06-25T05:43:56-04:00
 tags:
   - blog
+  - gaming
+  - ultrakill
+  - narrative
 categories: []
 series: []
 description:
   "Thoughts and interpretations of ULTRAKILL's story themes and storytelling
   style."
-draft: true
+draft: false
 ---
 
 <!--markdownlint-disable MD025 MD033 MD013-->
@@ -180,7 +183,71 @@ Which brings us to Testament III
 ## God (Yes, _that_ one)
 
 Despite not being a JRPG, it is my belief that God will be the final boss of
-ULTRAKILL.
+ULTRAKILL. Or, if not God directly, Gabriel empowered by the residual divinity
+in God's corpse. The assumption that God will die at some point is basically
+handed to us. Act III is called "GODFIST SUICIDE", it's not exactly a secret.
+Plus, each testament illustrates God's reasons for creating Hell, his guilt over
+doing so, and eventually his search for oblivion[^4].
+
+I believe the guilt and longing for death are as they appear on the surface, but
+not everything lines up with God's _motive_ for creating Hell. If this is the
+same God described in Dante's Inferno, we're talking about an omnipotent,
+omniscient, infinitely divine being somehow becoming ...impatient? I don't buy
+that. The clear takeaway from the Testaments is that God feels trapped by his
+nature. He's specifically horrified by his incapacity for change. What brings
+this conflict into focus is my favorite lorebook in the game, hidden in a secret
+corner for 7-4. From other hints, we can assume it was written by Hell Itself,
+and it reads thusly:
+
+<blockquote>
+<span style="font-family:monospace">
+<span style="color:red">
+THIS IS THE ONLY WAY IT COULD HAVE ENDED.
+
+WAR NO LONGER NEEDED ITS ULTIMATE PRACTITIONER. IT HAD BECOME A SELF-SUSTAINING
+SYSTEM. MAN WAS CRUSHED UNDER THE WHEELS OF A MACHINE CREATED TO CREATE THE
+MACHINE CREATED TO CRUSH THE MACHINE. SAMSARA OF CUT SINEW AND CRUSHED BONE.
+DEATH WITHOUT LIFE. NULL OUROBOROS. ALL THAT REMAINED IS WAR WITHOUT REASON.
+
+A MAGNUM OPUS. A COLD TOWER OF STEEL. A MACHINE BUILT TO END WAR IS ALWAYS A
+MACHINE BUILT TO CONTINUE WAR. YOU WERE BEAUTIFUL, OUTSTRETCHED LIKE ANTENNAS TO
+HEAVEN. YOU WERE BEYOND YOUR CREATORS. YOU REACHED FOR GOD, AND YOU FELL. NONE
+WERE LEFT TO SPEAK YOUR EULOGY. NO FINAL WORDS, NO CONCLUDING STATEMENT. NO
+POINT. PERFECT CLOSURE.
+
+T H I S I S T H E O N L Y W A Y I T S H O U L D H A V E E N D E D .
+
+</span>
+
+The pages of the book are blank.
+
+</blockquote>
+
+What a read, huh? For such a gameplay-focused project, it's funny the story's
+narrative lynchpin lies in the difference between "could", "should", and "did".
+According to God's design, Humanity should have
+"`LET THE EVIL OF THEIR OWN LIPS CONSUME THEM`". This almost happened. The Final
+War nearly wiped out all life on earth, and its automated nature meant it should
+have continued long afterward. A perfect, poetic conclusion. Humanity undone by
+its ingenuity, the very thing that led them out of their caves would usher them
+into their graves. But that's not what happened.
+
+God mentions that humanity is damned to an eternity of torture for failing to
+follow His word, but Hell was likely created way, way before The Final War. This
+creates an interesting difference between God and Humanity. God says in
+Testament III "`I HAVE CREATED HELL... And now I can no longer unmake it`", but
+Humanity somehow did both. They created Hell on Earth and then unmade it with
+The New Peace. They had the flexibility to admit they were wrong that God simply
+didn't.
+
+I don't know where exactly the story goes from here. There's plenty of loose
+ends that I have nothing to say about. All I know is that for every hour spent
+in the cybergrind, I'll spend another thinking about how beautifully poetic a
+failed vision can be.
+
+Signing off: Wheelsbot
+
+_~~Toss a coin my way, but don\'t shoot it this time, K?~~_
 
 [^1]:
     Specifically Swordsmachine, whose frame is considered "beautiful". So much
@@ -198,3 +265,8 @@ ULTRAKILL.
     [DREAM'S END COME TRUE](https://mothcpu.net/dect/story) by mothcpu. It's a
     short story about what might have happened in the dying mind of V2 and it's
     seriously worth your time. Check it out.
+
+[^4]:
+    Including all of these would make this post way too long so instead
+    [here's a link to the Wiki](https://ultrakill.wiki.gg/wiki/Terminals#Testaments).
+    Go nuts.

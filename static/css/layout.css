@@ -44,6 +44,10 @@ body {
   margin: 0;
 }
 
+sup {
+  line-height: 1em;
+}
+
 .main {
   margin: auto;
   max-width: 42em;
@@ -83,7 +87,7 @@ li {
 }
 
 p {
-  line-height: 1.6em;
+  line-height: 1.4em;
 }
 
 h1 {
