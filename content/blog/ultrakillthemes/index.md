@@ -18,7 +18,7 @@ description:
 draft: false
 ---
 
-<!--markdownlint-disable MD025 MD033 MD013-->
+<!--markdownlint-disable MD025 MD033 MD013 MD036-->
 
 Alright, brace yourselves, hot take incoming: I really like ULTRAKILL. I know,
 right? Somebody had to say it. There's not much to be said on the game itself
@@ -77,9 +77,9 @@ equivalent of Dante portraying himself as the based chad christian and everyone
 else as the cringe sinner soyjak burning in hell. I'm exaggerating, obviously,
 but a major part of interpreting Inferno in a modern context is recognizing
 which parts were written as an enduring depiction of eternal damnation couched
-in a time when Florence was a sovereign state, and which parts were one guy
-trying to cement his specific vision of Christianity after 13 centuries of
-heresies, schisms, and crusades.
+in a time when Florence was a sovereign state. Additionally, you have to figure
+out which parts were one guy trying to cement his specific vision of
+Christianity after 13 centuries of heresies, schisms, and crusades.
 
 This theological hodgepodge makes for a very flexible setting, where Archangel
 Gabriel and King Minos can coexist. In a way, Hakita is just taking advantage of
@@ -157,7 +157,7 @@ other machines[^1], but V2 exhibits downright social behavior. It bows, it keeps
 grudges, it even has a sense of irony[^2]. It's an object that is nonetheless
 capable of thinking and feeling[^3]. But not quite free will. V2 still follows
 its given directives without question, same as every other machine. Yet in these
-conditions, an sense of self was able to blossom. A mind without free will.
+conditions, a sense of self was able to blossom. A mind without free will.
 
 Which brings us to Testament III
 
@@ -197,7 +197,7 @@ that. The clear takeaway from the Testaments is that God feels trapped by his
 nature. He's specifically horrified by his incapacity for change. What brings
 this conflict into focus is my favorite lorebook in the game, hidden in a secret
 corner for 7-4. From other hints, we can assume it was written by Hell Itself,
-and it reads thusly:
+and it reads as follows:
 
 <blockquote>
 <span style="font-family:monospace">
@@ -224,7 +224,7 @@ The pages of the book are blank.
 </blockquote>
 
 What a read, huh? For such a gameplay-focused project, it's funny the story's
-narrative lynchpin lies in the difference between "could", "should", and "did".
+narrative linchpin lies in the difference between "could", "should", and "did".
 According to God's design, Humanity should have
 "`LET THE EVIL OF THEIR OWN LIPS CONSUME THEM`". This almost happened. The Final
 War nearly wiped out all life on earth, and its automated nature meant it should
@@ -247,7 +247,7 @@ failed vision can be.
 
 Signing off: Wheelsbot
 
-_~~Toss a coin my way, but don\'t shoot it this time, K?~~_
+_~~Toss a coin my way, but don't shoot it this time, K?~~_
 
 [^1]:
     Specifically Swordsmachine, whose frame is considered "beautiful". So much
