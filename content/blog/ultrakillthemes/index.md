@@ -1,7 +1,7 @@
 ---
 title: "Why ULTRAKILL's Story is Worth Paying Attention To"
 params:
-  icon: "󰈈 "
+  icon: "󱎴 "
 date: 2025-06-25T05:43:56-04:00
 publishDate: 2025-06-25T05:43:56-04:00
 lastmod: 2025-06-25T05:43:56-04:00
