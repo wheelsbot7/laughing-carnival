@@ -44,19 +44,51 @@ body {
   margin: 0;
 }
 
+.card {
+  height: auto;
+  background-color: #121212;
+  border: 1px solid #353535;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.layout-grid {
+  position: relative;
+  align-items: start;
+  align-content: stretch;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+
 kbd {
-	background-color: #eee;
-	border-radius: 3px;
-	border: 1px solid #b4b4b4;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7)
-		inset;
-	color: #333;
-	display: inline-block;
-	font-size: 0.85em;
-	font-weight: 700;
-	line-height: 1;
-	padding: 2px 4px;
-	white-space: nowrap;
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.2),
+    0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  color: #333;
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
 }
 
 sup {
@@ -65,7 +97,7 @@ sup {
 
 .main {
   margin: auto;
-  max-width: 42em;
+  max-width: 62em;
 }
 
 .main .header-bar {
@@ -701,8 +733,6 @@ td {
   text-align: center;
   vertical-align: middle;
   line-height: 1.8em;
-  margin-top: 6em;
-  margin-bottom: 6em;
   text-align: center;
   padding: 0 0.5em 0 0.5em;
 }

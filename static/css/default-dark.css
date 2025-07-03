@@ -13,6 +13,7 @@
 }
 
 .icon-glow {
+  font-size: 1.4em;
   color: var(--main-sec);
   filter: drop-shadow(0 0 3px var(--main-sec));
 }
@@ -24,6 +25,10 @@ body {
 
 a {
   color: var(--main-text);
+}
+
+a:hover {
+  color: var(--main-sec);
 }
 
 .__h_instagram.card {
