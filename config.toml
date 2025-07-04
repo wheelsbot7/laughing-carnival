@@ -42,6 +42,7 @@ category = "categories"
 series = "series"
 tag = "tags"
 micro = "micro"
+projects = "projects"
 
 # Configure syntax highlight
 [markup]

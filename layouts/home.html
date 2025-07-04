@@ -31,7 +31,7 @@
 
       <div class="card recent-post-list">
         <h3>Recent posts:</h3>
-        {{ range first 2 (where .Site.RegularPages "Type" "in"
+        {{ range first 3 (where .Site.RegularPages "Type" "in"
         site.Params.mainSections) }}
         <article class="post-preview">
           <header>
@@ -54,7 +54,41 @@
           </div>
         </article>
         {{ end }}
-        <a href="/blog">See all posts</a>
+        <div class="rmore">
+          <a href="/blog" style="background-color: var(--secondary-bg-color)"
+            >See all posts</a
+          >
+        </div>
+      </div>
+      <div class="card recent-project-list">
+        <h3>Projects:</h3>
+        {{ range first 3 (where .Site.RegularPages "Type" "in" "projects") }}
+        <article class="post-preview">
+          <header>
+            <h2 class="title">
+              <a href="{{ .Permalink }}"
+                ><span class="icon-glow">{{ .Params.Icon }}</span> {{ .Title
+                }}</a
+              >
+            </h2>
+            <div class="meta">
+              <div class="date">{{ .Date.Format "2006-01-02" }}</div>
+              {{ partial "tags.html" . }}
+            </div>
+          </header>
+
+          <div class="summary">{{ .Description }}</div>
+
+          <div class="rmore">
+            <a href="{{ .Permalink }}" class="rmore">Read more</a>
+          </div>
+        </article>
+        {{ end }}
+        <div class="rmore">
+          <a href="/blog" style="background-color: var(--secondary-bg-color)"
+            >See all posts</a
+          >
+        </div>
       </div>
       {{ else }} {{ $paginator := .Paginate (where site.RegularPages "Type" "in"
       site.Params.mainSections) }} {{ range $paginator.Pages }} {{ .Render
