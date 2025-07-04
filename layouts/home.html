@@ -12,6 +12,15 @@
         </p>
         {{ end }}
       </div>
+      <div class="card">
+        <h2>Socials</h2>
+        {{ range .Site.Data.socials }}
+        <p>
+          <span class="icon-glow">{{ .icon }}</span> -
+          <a href="{{ .link }}">{{ .site }}</a>
+        </p>
+        {{ end }}
+      </div>
     </div>
     <div class="column-right">
       {{if .Site.Params.enable_separate_main_page }}

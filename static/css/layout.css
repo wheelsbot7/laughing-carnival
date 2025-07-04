@@ -48,8 +48,12 @@ body {
   height: auto;
   background-color: #121212;
   border: 1px solid #353535;
-  padding: 1.5rem;
+  padding: 1rem;
   overflow: hidden;
+}
+
+.card > * {
+  margin: 0.5em 0em 0.5em 0em;
 }
 
 .layout-grid {
@@ -57,7 +61,7 @@ body {
   align-items: start;
   align-content: stretch;
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: 2fr 5fr;
   grid-template-rows: auto;
 }
@@ -72,7 +76,14 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
 }
 
 kbd {
