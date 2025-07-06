@@ -4,6 +4,7 @@
   {{- $path := strings.TrimPrefix "./" $u.Path }}
   {{- with or (.PageInner.Resources.Get $path) (resources.Get $path) -}}
     {{- if ne .MediaType.SubType "svg" -}}
+    {{- if ne .MediaType.SubType "gif" -}}
     {{- with .Process "webp" -}}
       {{- $src = .RelPermalink -}}
       {{- with $u.RawQuery -}}
@@ -12,6 +13,7 @@
       {{- with $u.Fragment -}}
         {{- $src = printf "%s#%s" $src . -}}
       {{- end -}}
+    {{- end -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
