@@ -20,7 +20,7 @@ description: "A user-friendly guide to using the archinstall utility"
 draft: false
 ---
 
-<!--markdownlint-disable MD029 MD030 MD013-->
+<!--markdownlint-disable MD029 MD030 MD013 MD022-->
 
 If you're just here for an install guide, hop down to the numbered list. If
 you're interested in learning _why_ you should install Linux, read on!
@@ -56,7 +56,6 @@ what they're doing, so I thought I'd make an install guide that makes sense to
 me and hopefully some of you. With me so far? Great, then let's go!
 
 1. ## PREPARE INSTALLATION MEDIUM
-
    1. It's a lot less scary than it sounds, you just need a USB flash drive with
       \>4GB of storage.
    2. Download the Arch ISO file from whatever mirror you want
@@ -76,7 +75,6 @@ me and hopefully some of you. With me so far? Great, then let's go!
 > mind losing.
 
 2.  ## BOOT YOUR PC INTO BIOS
-
     1. This step is going to be different depending on what PC you have.
        Generally speaking, hold down either F2 or Delete when your computer
        shows the manufacturer logo
@@ -85,7 +83,6 @@ me and hopefully some of you. With me so far? Great, then let's go!
     3. Save your changes and reboot.
 
 3.  ## INSTALLING LINUX
-
     1. Finally! You're gonna see some command line gibberish pop up, but don't
        touch anything until you get to the full "Welcome to Arch Linux!" screen.
     2. We need to do 2 more things before starting the installation proper:
@@ -135,7 +132,6 @@ me and hopefully some of you. With me so far? Great, then let's go!
           and Ctrl+X to exit.
 
 4.  ## ARCHINSTALL
-
     1. Alright, the hard part's out of the way, this is your victory lap. Once
        you've connected to the internet and ranked your mirrors, type
        `archinstall` and hit enter. You'll be taken to a TUI (text user
@@ -163,7 +159,6 @@ me and hopefully some of you. With me so far? Great, then let's go!
        specified earlier.
 
 5.  ## POST-INSTALL
-
     1.  If you're ready to dive into settings and configure your new system,
         this is where you get off, but if not, there's a few post-install things
         I would recommend you do.

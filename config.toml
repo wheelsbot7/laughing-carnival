@@ -18,6 +18,12 @@ identifier = "blog"
 url = "/blog/"
 
 [[menu.main]]
+name = "Projects"
+weight = -115
+identifier = "projects"
+url = "/projects/"
+
+[[menu.main]]
 name = "Tags"
 weight = -110
 identifier = "tag"
