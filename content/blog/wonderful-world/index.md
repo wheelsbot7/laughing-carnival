@@ -12,8 +12,6 @@ tags:
 categories: []
 series: []
 syndicate: []
-audio: []
-videos: []
 description:
   "Dotfiles are a fun and infuriating part of Linux. This article will guide you
   through my own, focusing on Hyprland and Neovim."

@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 params:
-  icon: " "
+  icon: "󰜡 "
 date: {{ .Date }}
 publishDate: {{ .Date }}
 lastmod: {{ .Date }}
