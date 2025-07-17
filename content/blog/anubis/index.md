@@ -3,8 +3,8 @@ title: "Anubis: The Best Captcha That Isn't"
 params:
   icon: "󰒋 "
 date: 2025-07-09T11:31:47-04:00
-publishDate: 2025-07-09T11:31:47-04:00
-lastmod: 2025-07-09T11:31:47-04:00
+publishDate: 2025-07-17
+lastmod: 2025-07-17
 tags:
   - security
   - webdev
