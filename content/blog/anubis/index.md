@@ -26,6 +26,8 @@ actors[^1] that abuse the HTTP protocol for bad-faith reasons. Now that there's
 a market for reselling terabytes of other people's work, it's become harder to
 service actual requests.
 
+## The Solution (not really)
+
 The time-tested, industry-standard solution for this was Captchas. But those
 were always a flawed approach. Any image-based Captcha relied on the human
 brain's hyper-specialization with pattern recognition, but that was always a
@@ -43,6 +45,8 @@ computation is done on the client's machine. Good-faith users will solve it
 once, access what they need, and leave, only wasting less than a second. Bots
 that are spamming HTTP requests like it's going out of business will waste hours
 and electricity solving thousands of hash functions.
+
+## The Solution (also not really but better)
 
 However, Anubis's true advantage is accessibility and convenience. No vision
 requirements means people relying on screen readers won't be affected.
