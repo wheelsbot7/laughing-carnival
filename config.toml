@@ -65,7 +65,7 @@ Personal blog powered by [hugo](https://gohugo.io/), an open-source static site 
 keywords = ""
 description = "Personal blog."
 [params.meta.fediverse]
-creator = "@wheelsbot@wetdry.world" # https://blog.joinmastodon.org/2024/07/highlighting-journalism-on-mastodon/
+creator = "@wheelsbot@lab.wheelsbot.dev" # https://blog.joinmastodon.org/2024/07/highlighting-journalism-on-mastodon/
 
 [params]
 mainSections = ['blog']
