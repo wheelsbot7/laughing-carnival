@@ -1,4 +1,3 @@
 # laughing-carnival
 
-A testing repository for the static site generator Hugo.
-
+A repository for the static site I use as a personal blog.
