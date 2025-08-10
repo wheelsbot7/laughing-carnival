@@ -30,3 +30,22 @@ services. Regardless, if you aren't willing to switch, here's what you need to
 do.
 
 ## Prerequisites
+
+Most of what you need to host a mastodon instance is free or easy to acquire.
+First, the hardware. Mastodon has very low system requirements[^1], so this is a
+great project for your old clunker. It's still the most expensive part of this
+setup, but if you're the kind of person to self-host a mastodon server, you
+probably have more than 1 PC lying around.
+
+[^1]:
+    While the offical documentation doesn't mention any recommended specs, my
+    single-user instance worked fine with just 4 Gigs of RAM and an Intel Core
+    i3.
+
+Second thing that doesn't have a "free alternative" is a domain name. There are
+a [ton](https://www.techradar.com/news/best-domain-registrars) of providers out
+there, but for the sake of convenience I'm going to recommend
+[Cloudflare](https://www.cloudflare.com/products/registrar/). We're going to be
+using Cloudflare Tunnels to expose the server to the internet, and it's easier
+if your domain is already registered there. To reiterate, other providers will
+work just fine, they're just harder to setup for this specific use case.
