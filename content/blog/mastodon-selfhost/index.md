@@ -38,7 +38,7 @@ setup, but if you're the kind of person to self-host a mastodon server, you
 probably have more than 1 PC lying around.
 
 [^1]:
-    While the offical documentation doesn't mention any recommended specs, my
+    While the official documentation doesn't mention any recommended specs, my
     single-user instance worked fine with just 4 Gigs of RAM and an Intel Core
     i3.
 
@@ -49,3 +49,10 @@ there, but for the sake of convenience I'm going to recommend
 using Cloudflare Tunnels to expose the server to the internet, and it's easier
 if your domain is already registered there. To reiterate, other providers will
 work just fine, they're just harder to setup for this specific use case.
+
+Lastly, you'll need an SMTP server. This isn't strictly necessary, but the
+automated installation still expects you to have one, and setting it up is
+easier than going without it. Self-hosting an SMTP server is notoriously
+difficult, so I'd recommend using
+[any service listed in the official docs](https://docs.joinmastodon.org/user/run-your-own/#so-you-want-to-run-your-own-mastodon-server).
+I went with Mailgun, but once again, all of them work fine.
