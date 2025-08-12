@@ -18,6 +18,8 @@ description:
 draft: true
 ---
 
+<!--markdownlint-disable MD025 MD033 MD013 MD036-->
+
 First off, let's get one thing out of the way. You probably shouldn't do this.
 There are already a ton of guides on how to host Mastodon on Debian-based
 distros. If you're doing this on a fresh machine, go with Ubuntu 22.04 and use
@@ -56,3 +58,38 @@ easier than going without it. Self-hosting an SMTP server is notoriously
 difficult, so I'd recommend using
 [any service listed in the official docs](https://docs.joinmastodon.org/user/run-your-own/#so-you-want-to-run-your-own-mastodon-server).
 I went with Mailgun, but once again, all of them work fine.
+
+## The Easy Part
+
+Despite not being supported, the AUR has a
+[mastodon](https://aur.archlinux.org/packages/mastodon) package that handles a
+lot of the setup for you. There is a second postinstall set of commands you have
+to run manually, which I've written below[^2].
+
+```bash
+##########################################
+### Mastodon Installation Instructions ###
+##########################################
+
+### To setup Mastodon, enable and start PostgreSQL and Valkey ###
+systemctl enable --now postgresql valkey
+
+### Create the Mastodon PostgreSQL user and grant it the ability to create databases with ###
+sudo -u postgres createuser -d mastodon
+
+### Then, run the following commands ###
+cd /var/lib/mastodon
+sudo chown mastodon:mastodon -R .
+sudo -u mastodon corepack enable --install-directory . yarn
+sudo -u mastodon RAILS_ENV=production NODE_OPTIONS=--openssl-legacy-provider PATH=./:$PATH bundle exec rails mastodon:setup
+
+### Finally, enable and start all the required services ###
+systemctl enable --now mastodon.target
+
+```
+
+[^2]:
+    The actual commands mention an Nginx server and Redis. We won't be using
+    either since the [built in web server, Puma](https://github.com/puma/puma),
+    does everything we need and Redis has been
+    [replaced by Valkey](https://archlinux.org/news/valkey-to-replace-redis-in-the-extra-repository/)
