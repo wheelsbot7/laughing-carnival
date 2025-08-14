@@ -53,7 +53,8 @@ projects = "projects"
 # Configure syntax highlight
 [markup]
 [markup.highlight]
-style = "monokai" # dark themes: monokai, api, fruity, native, rrt, swapoff ... https://xyproto.github.io/splash/docs/longer/all.html
+style = "monokai"  # dark themes: monokai, api, fruity, native, rrt, swapoff ... https://xyproto.github.io/splash/docs/longer/all.html
+guessSyntax = true
 
 [params.author]
 name = "Owen Wertzberger"

@@ -66,7 +66,7 @@ Despite not being supported, the AUR has a
 lot of the setup for you. There is a second postinstall set of commands you have
 to run manually, which I've written below[^2].
 
-```bash
+```sh
 ##########################################
 ### Mastodon Installation Instructions ###
 ##########################################
@@ -93,3 +93,25 @@ systemctl enable --now mastodon.target
     either since the [built in web server, Puma](https://github.com/puma/puma),
     does everything we need and Redis has been
     [replaced by Valkey](https://archlinux.org/news/valkey-to-replace-redis-in-the-extra-repository/)
+
+The mastodon setup process will ask you for your domain name and SMTP
+credentials, so have those ready. It will also provide an admin password, which
+you need to copy and write down somewhere. In case you didn't know, you can copy
+text in the terminal with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>. If you
+did everything right, you should see your local instance on localhost:3000.
+However, since this is a very complicated process that requires a lot of
+customization, something is probably broken. That means we are finally at the
+fun part.
+
+## Troubleshooting
+
+Problem: My browser just shows a mastodon logo and nothing else.
+
+![Firefox showing a mastodon logo and a bunch of errors in the console](./images/mastodonLogoHTML.png)
+
+This is a permissions problem where the web server can't access most of the
+page. First, check if your mastodon directory is owned by the mastodon user.
+
+```sh
+cd /var/lib/mastodon && ls -a
+```
