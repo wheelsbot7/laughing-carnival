@@ -115,3 +115,25 @@ page. First, check if your mastodon directory is owned by the mastodon user.
 ```sh
 cd /var/lib/mastodon && ls -a
 ```
+
+You'll see a bunch of folders, but the one we care about is called "public". If
+it's not owned by mastodon, run
+`sudo chown mastodon:mastodon -R /var/lib/mastodon/`. If it still doesn't work,
+edit your ".env.production" file and add the line
+"RAILS_SERVE_STATIC_FILES=true"[^3].
+
+> [!NOTE]
+>
+> After every change you make, you should run this command:
+>
+> ```sh
+> sudo systemctl daemon-reload && sudo systemctl restart mastodon-web mastodon-sidekiq mastodon-streaming
+> ```
+>
+> Check your changes often, as every fix you apply has the potential to break
+> something.
+
+[^3]:
+    I recommend reading
+    [the configuration guide](https://docs.joinmastodon.org/admin/config/#rails_serve_static_files)
+    if you're curious about why this is necessary.
