@@ -122,7 +122,7 @@ it's not owned by mastodon, run
 edit your ".env.production" file and add the line
 "RAILS_SERVE_STATIC_FILES=true"[^3].
 
-> [!NOTE]
+> [!NOTE] Check your work!
 >
 > After every change you make, you should run this command:
 >
@@ -132,6 +132,60 @@ edit your ".env.production" file and add the line
 >
 > Check your changes often, as every fix you apply has the potential to break
 > something.
+
+Another problem you may not have right away but should really fix as soon as you
+can is file storage. Mastodon stores every asset it serves from this directory:
+`/var/lib/mastodon/public/system`. If you keep that folder in your root drive,
+you might run out of space. Mounting another drive in Linux is a separate
+ordeal, so for that I'd recommend
+[this guide from GeeksforGeeks](https://www.geeksforgeeks.org/linux-unix/how-to-mount-and-unmount-drives-on-linux/).
+Once you've done that, you can run these 2 commands to migrate everything over
+to the new drive.
+
+```sh
+###Replace {DRIVE_NAME} with the name of the folder you mounted the drive to.###
+sudo mv /var/lib/mastodon/public/system /mnt/{DRIVE_NAME}
+###ln is a standard linux utility for creating symbolic links. Basically shortcuts on Windows.###
+sudo ln -s /mnt/{DRIVE_NAME}/system /var/lib/mastodon/public/system
+```
+
+Those are the only 2 setup problems I ran into, and if you're lucky the same was
+true for you. If not, there are plenty of support forums out there, and at this
+point our setup is mostly identical to a standard Debian-based installation.
+
+## Getting Online
+
+You're server's definitely connected to the internet at this point, but to
+federate with other users, you'll need a public IP address. Most consumer
+routers don't support this, and opening up your local area network (LAN) to the
+wide area network (WAN) is a major security risk. Instead, we'll be using
+Cloudflare tunnels to route any request for your server's url to a specific port
+on your machine. To start, install Cloudflare's background service daemon with
+the following command:
+
+```sh
+sudo pacman -S cloudflared
+```
+
+Go into your Cloudflare dashboard and click "Zero Trust" on the sidebar. From
+there, navigate to "Networks -> Tunnels" from a dropdown menu. Hit "New Tunnel"
+and then select the "Cloudflared" option when prompted. It will prompt once more
+for a name before showing a command to run on your machine to bind the tunnel to
+your server. Afterwards, set the tunnel to route the domain you purchased to an
+HTTPS service with the URL "localhost:3000". Lastly, you'll need to put in your
+router's public IP address. You can find this by visiting
+[https://whatismyipaddress.com/](https://whatismyipaddress.com/) and putting the
+given IPv4 address in your tunnel's configuration menu under the heading
+"Private networks". If you can't find it, just save your changes, click on the 
+icon to the right of your tunnel and click "Configure".
+
+Afterwards, you should be able to reach your server through your domain on any
+device. There's only 1 step left to get your mastodon server fully federated:
+join a relay server. A helpful explanation of their purpose is provided in the
+mastodon settings under Settings -> Administration -> Relays. A list of open and
+active relays can be found [at this aggregator](https://relaylist.com/). Add a
+few to your server, and you should be able to see posts from other servers in a
+few minutes.
 
 [^3]:
     I recommend reading
