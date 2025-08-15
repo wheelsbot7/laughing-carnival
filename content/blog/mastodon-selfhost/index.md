@@ -3,8 +3,8 @@ title: "Hosting a Mastodon Server on Arch Linux"
 params:
   icon: " "
 date: 2025-08-05T13:13:57-04:00
-publishDate: 2025-08-05T13:13:57-04:00
-lastmod: 2025-08-05T13:13:57-04:00
+publishDate: 2025-08-15T13:13:57-04:00
+lastmod: 2025-08-15T13:13:57-04:00
 tags:
   - blog
   - webdev
@@ -15,7 +15,7 @@ series: []
 description:
   "Tutorial for setting up a mastodon server on a local machine running Arch
   Linux."
-draft: true
+draft: false
 ---
 
 <!--markdownlint-disable MD025 MD033 MD013 MD036-->
@@ -209,6 +209,14 @@ when I forgot to disable sandboxing and kept getting read/write errors. This
 dashboard is the best way to diagnose what might be wrong with your server.
 Check it often, at least until you're confident things are up and running the
 way you want it.
+
+I'm still early in my self-hosting journey, so I'll probably update this post in
+the future with whatever errors I run into in the future alongside their
+solutions. Until then...
+
+Signing off: Wheelsbot
+
+~~Arch CAN do that, but that doesn't mean it SHOULD.~~
 
 [^3]:
     I recommend reading
