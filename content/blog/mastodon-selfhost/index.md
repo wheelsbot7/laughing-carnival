@@ -149,6 +149,12 @@ sudo mv /var/lib/mastodon/public/system /mnt/{DRIVE_NAME}
 sudo ln -s /mnt/{DRIVE_NAME}/system /var/lib/mastodon/public/system
 ```
 
+Mastodon has strict sandboxing by default, meaning it won't touch files outside
+of its directory. Since we want it to do that, navigate to
+`/usr/lib/systemd/system/mastodon-sidekiq.service` and comment out the line
+`ProtectSystem=strict` by putting a `#` in front of it. Do the same for
+`/etc/systemd/system/mastodon-web.service`.
+
 Those are the only 2 setup problems I ran into, and if you're lucky the same was
 true for you. If not, there are plenty of support forums out there, and at this
 point our setup is mostly identical to a standard Debian-based installation.
@@ -186,6 +192,23 @@ mastodon settings under Settings -> Administration -> Relays. A list of open and
 active relays can be found [at this aggregator](https://relaylist.com/). Add a
 few to your server, and you should be able to see posts from other servers in a
 few minutes.
+
+## Maintenance
+
+Remember at the start when I said servers don't update unless they need to? If
+you're regularly updating your machine, I suggest adding the line
+`IgnorePkg = mastodon` to your `/etc/pacman.conf`. This will cause pacman to
+ignore updates and hopefully preserve the stability of this incredibly fragile
+setup. Other than that, I'd recommend checking your Sidekiq dashboard often. It
+has its own tab under Mastodon settings and looks like this:
+
+![Sidekiq dashboard plotting processed requests and failed requests over time](./images/Sidekiq.png)
+
+You might notice the huge spike in failed requests near the start, that was from
+when I forgot to disable sandboxing and kept getting read/write errors. This
+dashboard is the best way to diagnose what might be wrong with your server.
+Check it often, at least until you're confident things are up and running the
+way you want it.
 
 [^3]:
     I recommend reading
