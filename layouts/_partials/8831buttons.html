@@ -1,0 +1,19 @@
+<span>
+  {{ range .Site.Data.buttons }} {{ if not .link }}
+  <style>
+    .{{ .name }}:hover {
+      cursor: default;
+    }
+  </style>
+  {{ end }}
+  <a href="{{ .link }}" style="text-decoration: none" class="{{ .name }}">
+    <img
+      alt="{{ .name }}"
+      src="88x31/{{ .file }}"
+      class="button8831"
+      width="88"
+      height="31"
+    />
+  </a>
+  {{ end }}
+</span>

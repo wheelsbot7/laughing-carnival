@@ -1,0 +1,42 @@
+- name: Clygro
+  file: clygro8831.svg
+  link: https://clygro.cc
+- name: camelia
+  file: camelia.png
+  link: https://camelia.dev
+- name: mjdxp
+  file: mjdxp.png
+  link: https://mjdxp.neocities.org/
+- name: synth-download
+  file: synth.download.svg
+  link: https://synth.download/
+- name: ffmpeg
+  file: ffmpeg.png
+  link: https://ffmpeg.org/
+- name: iso 8601
+  file: iso.png
+  link: https://www.w3.org/QA/Tips/iso-date
+- name: Servo
+  file: servo8831.jpg
+  link: https://servo.org/
+- name: Matrix
+  file: matrix.png
+  link: https://matrix.org
+- name: darkmode
+  file: darkmode.png
+  link:
+- name: drpepper
+  file: drpepper.gif
+  link:
+- name: archlinux
+  file: archlinux.png
+  link: https://archlinux.org
+- name: Neovim
+  file: neovim.gif
+  link: https://neovim.io
+- name: Deltarune
+  file: deltarune.gif
+  link: https://deltarune.com
+- name: linux
+  file: LINUX.gif
+  link: https://kernel.org
