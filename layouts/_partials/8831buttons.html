@@ -6,7 +6,11 @@
     }
   </style>
   {{ end }}
-  <a href="{{ .link }}" style="text-decoration: none" class="{{ .name }}">
+  <a
+    href="{{ .link }}"
+    style="text-decoration: none; display: inline-block"
+    class="{{ .name }}"
+  >
     <img
       alt="{{ .name }}"
       src="88x31/{{ .file }}"
