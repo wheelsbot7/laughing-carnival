@@ -31,15 +31,27 @@
 }
 
 @font-face {
-  font-family: "Atkynson";
+  font-family: "Atkinson-Nerd";
   src: url("/fonts/AtkynsonNerdFont-Regular.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "AtkinsonHyperlegible";
+  src: url("/fonts/AtkinsonHyperlegible.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.icon-glow, a, h2 {
+  font-family: "Atkinson-Nerd";
+}
+
 body {
-  font-family: Atkynson, sans-serif;
+  font-family: AtkinsonHyperlegible, sans-serif;
   counter-reset: heading;
   margin: 0;
 }
