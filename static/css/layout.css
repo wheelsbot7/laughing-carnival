@@ -46,8 +46,12 @@
   font-display: swap;
 }
 
-.icon-glow, a, h2 {
+.icon-glow, a, h2, .icon {
   font-family: "Atkinson-Nerd";
+}
+
+.icon {
+  font-family: "Atkinson-Nerd" !important;
 }
 
 body {

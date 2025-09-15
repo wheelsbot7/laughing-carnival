@@ -182,8 +182,9 @@ HTTPS service with the URL "localhost:3000". Lastly, you'll need to put in your
 router's public IP address. You can find this by visiting
 [https://whatismyipaddress.com/](https://whatismyipaddress.com/) and putting the
 given IPv4 address in your tunnel's configuration menu under the heading
-"Private networks". If you can't find it, just save your changes, click on the 
-icon to the right of your tunnel and click "Configure".
+"Private networks". If you can't find it, just save your changes, click on the
+<span class="icon"></span> icon to the right of your tunnel and click
+"Configure".
 
 Afterwards, you should be able to reach your server through your domain on any
 device. There's only 1 step left to get your mastodon server fully federated:
