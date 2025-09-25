@@ -14,9 +14,31 @@ description: "An overview of Arch-derived Linux distributions"
 draft: true
 ---
 
-Arch Linux has a reputation for being a "difficult" distribution.
+Arch Linux has a reputation for being a "difficult" distribution. I've written
+previously about how that's not really something that needs to change, smoother
+onboarding just isn't a part of the Arch Linux project. The appeal of Arch is
+that it ships with basically no software. While the latest Ubuntu ISO is ~5.8
+gigabytes, Arch's September 2025 ISO is just ~1.4 gigabytes. In fact, if you
+look at the packages included as part of the base installation, you'll find a
+very funny snippet to read on a website documenting a Linux distribution.
+
+![List of dependencies defining an Arch Linux system. Linux itself is optional.](./images/linux-optional.png)
+
+This design philosophy of build-it-yourself has lead to a number of pre-built
+distributions downstream that offer more than a foundation. Not to say that
+these are all "Arch but Easy", I'd liken it to using cake mix. You still have to
+bake the rest of the cake, but you can outsource a few steps. That being said,
+the same pitfalls apply here. You better REALLY trust Betty Crocker if you're
+letting her make fundamental decisions about your cake. And in
+[Betty Crocker's case](https://www.thekitchn.com/grandmas-arent-buying-boxed-cake-mix-23687784),
+that's a bad idea.
 
 ## Manjaro
+
+Have ever wanted to run Arch while also being as plain as possible? Well, what
+Ubuntu is to Debian, Manjaro is to Arch. Not nearly to the same extent, Manjaro
+only established a company to get into enterprise in 2019, but the project
+overall follows Ubuntu's design philosophy of de-nerdifying the base OS[^1].
 
 ## Artix
 
@@ -25,3 +47,14 @@ Arch Linux has a reputation for being a "difficult" distribution.
 ## CachyOS
 
 ## SteamOS
+
+## EndeavourOS
+
+[^1]:
+    I vividly recall a bit of documentation insisting against calling Manjaro
+    "easy arch linux" but their
+    [current docs](https://wiki.manjaro.org/index.php/About_Manjaro) are very
+    open about user-friendliness being their main goal, so either that changed
+    or I imagined it. Probably the latter, I was in a rough spot when I first
+    tried Manjaro and my memory is patchy. Anyway, thanks for reading this
+    footnote, you're a real one.
