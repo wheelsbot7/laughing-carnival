@@ -33,24 +33,48 @@ letting her make fundamental decisions about your cake. And in
 [Betty Crocker's case](https://www.thekitchn.com/grandmas-arent-buying-boxed-cake-mix-23687784),
 that's a bad idea.
 
-## Manjaro
+##  Manjaro
 
 Have ever wanted to run Arch while also being as plain as possible? Well, what
-Ubuntu is to Debian, Manjaro is to Arch. Not nearly to the same extent, Manjaro
-only established a company to get into enterprise in 2019, but the project
-overall follows Ubuntu's design philosophy of de-nerdifying the base OS[^1].
+Ubuntu is to Debian, Manjaro is to Arch[^1]. Not nearly to the same extent,
+Manjaro only established a company to offer enterprise support in 2019, but the
+project overall follows Ubuntu's design philosophy of de-nerdifying the base
+OS[^2]. For the most part, they've been doing that well enough for someone who
+finds that appealing.
 
-## Artix
+However, Manjaro comes with some [baggage](https://manjarno.pages.dev/). At the
+time of writing, Manjaro has been on good behavior for a good while. 3 years is
+probably long enough to say they're not going to DDoS the AUR anytime soon. My
+main problem is just that there are better options these days if you want an
+easier Arch experience. The
+[archinstall](https://github.com/archlinux/archinstall) utility already provides
+a built-in installer that a normal person can use, and there are better
+distributions if all you want is a graphical installer.
 
-## Garuda
+##  EndeavourOS
+
+This is the "user-friendly arch" option that nearly everyone recommends, and I'm
+no different. I actually used to use this distro exclusively for installation
+because I had a very fragile ego and didn't want a reminder that I wasn't smart
+enough for vanilla Arch. Shaming myself into ricing aside, EndeavourOS is more
+like a loose collection of utilities with very little in the way of core
+modifications.
+
+##  Artix
+
+##  Garuda
 
 ## CachyOS
 
-## SteamOS
-
-## EndeavourOS
+##  SteamOS
 
 [^1]:
+    The third pillar of linux distributions, Fedora, actually follows the
+    opposite pattern. Red Hat Enterprise Linux was the base, and as the name
+    would imply, it was used for enterprise stuff. Fedora is the nerd-ified
+    version.
+
+[^2]:
     I vividly recall a bit of documentation insisting against calling Manjaro
     "easy arch linux" but their
     [current docs](https://wiki.manjaro.org/index.php/About_Manjaro) are very
