@@ -93,10 +93,34 @@ opinion, nothing of value was lost, but it's a good example of how Artix
 necessarily loses functionality. If we can ignore all nuance for a moment, their
 main selling point is _not_ offering an extremely useful piece of software.
 Beyond that, their reasons for doing so are even more turbo-nerdy than
-initramfs. This is the only usable Linux distribution for a very specific
-person, and I'm happy for them. For everyone else, just go with Arch.
+initramfs. For a very specific person, this is the only usable distribution and
+I'm happy for them. For everyone else, just go with Arch.
 
 ##  Garuda
+
+Garuda is a Hindu eagle god who acts as the mount of Vishnu and also hates all
+snakes everywhere forever. Garuda _Linux_ is a distribution of Arch Linux that
+aims to provide a "beautiful and easy-to-use desktop experience". Both are
+subjective qualities, but as long as we're talking subjectively, Garuda has the
+ugliest graphical environment I've seen on Linux. It makes me glad I'm
+colorblind, I'm spared the worst of it.
+
+Other than that, Garuda is _fine_. I _guess_. There really isn't anything wrong
+with it, it's just really hard to get past the aesthetic. Their coolest addition
+is the Chaotic AUR, which requires a whole explanation because the AUR is both
+the main advantage of using Arch Linux and the hardest part for Arch-derived
+distros to implement.
+
+### Side Quest: The AUR
+
+The AUR (Arch User Repository) is an alternative app store where every app is
+stored in a Git repository. Any user can upload whatever they want to a
+repository, as long as they're legally allowed to distribute it and it meets
+their submission guidelines. This sometimes includes a binary package file
+(`.pkg.tar.zst`), but often it contains only the source code and a shell script
+called `PKGBUILD`. This script describes how to compile a binary package from
+the source code, letting many different build systems be accessed from a single
+utility called `makepkg`.
 
 ## CachyOS
 
