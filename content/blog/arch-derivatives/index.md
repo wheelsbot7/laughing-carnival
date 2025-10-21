@@ -122,6 +122,19 @@ called `PKGBUILD`. This script describes how to compile a binary package from
 the source code, letting many different build systems be accessed from a single
 utility called `makepkg`.
 
+If you're familiar with open-source, you've probably heard of the practice of
+"compiling from source"[^6]. There are claims that compiling software yourself
+gives you better performance or access to the source code gives you better
+security, but the main reason the practice endures is what makes Linux a
+developer's paradise. You can customize every little thing, get under the hood
+and modify whatever you want. You can also receive patches significantly quicker
+since you don't have to wait for a new release, but again, this is a feature for
+professional computer-touchers. If that's not you, compiling from source just
+means updates take about a minute longer and take a solid chunk out of your
+battery life. The point here is: there's no inherent advantage to the AUR's
+approach of compiling software on the user's end, it just lowers the
+requirements to distribute software.
+
 ## CachyOS
 
 ##  SteamOS
@@ -156,3 +169,7 @@ utility called `makepkg`.
 [^5]:
     However, most of their sources come from before 2020 and are also
     opinionated, so take it with a grain of salt.
+
+[^6]:
+    Hell, Gentoo is a Linux distro where every single package is compiled from
+    source, even the kernel.
