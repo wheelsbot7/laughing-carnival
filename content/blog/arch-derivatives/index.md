@@ -133,9 +133,30 @@ professional computer-touchers. If that's not you, compiling from source just
 means updates take about a minute longer and take a solid chunk out of your
 battery life. The point here is: there's no inherent advantage to the AUR's
 approach of compiling software on the user's end, it just lowers the
-requirements to distribute software.
+requirements to distribute software, which finally brings us back to Garuda and
+its standout feature: the Chaotic AUR.
+
+The Chaotic AUR aims to make installing from the AUR as seamless as possible.
+It's technically its own binary package repository that you can configure pacman
+to get packages from. This is unusual because most people interact with the AUR
+through an AUR helper, usually `yay` or `paru`. The thing is, using an AUR
+helper is already pretty seamless. I don't think most folks will notice or even
+care if their packages aren't being managed by pacman directly. On top of that,
+a lot of AUR packages offer a version with the `-bin` suffix,the indicating it's
+been pre-compiled. The Chaotic AUR generates `-bin` packages with a couple
+servers churning through recent AUR updates, compiling 24/7. This obviously
+results in a ton of duplicated effort for a very niche benefit, but if that
+sounds appealing, you can use it from any arch-based distro.
+
+Putting all of this together, I struggle to find a reason to recommend Garuda,
+but at the same time it's clearly found a userbase and they're having a great
+time. For all I know the branding is just to keep serious people away. Honestly,
+you can probably find out if this distro's for you by looking at the
+screenshots.
 
 ## CachyOS
+
+Conversely, CachyOS is a distro defined by deep technical changes.
 
 ##  SteamOS
 
