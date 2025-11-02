@@ -226,8 +226,7 @@ Signing off: Wheelsbot
     than you do. This is like if Levi-oh-SAH was the correct pronunciation.
 
 [^1]:
-    But you can help
-    [change that](https://www.wheelsbot.dev/posts/arch-linux-install-guide/)
+    But you can help [change that](https://www.wheelsbot.dev/blog/archinstall)
     today!
 
 [^2]:

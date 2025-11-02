@@ -13,4 +13,4 @@ Links:
 
 - [ GitHub](https://github.com/wheelsbot7)
 - [ BlueSky](https://bsky.app/profile/wheelsbot.dev)
-- [ LinkedIn](https://www.linkedin.com/in/owen-wertzberger-14992b164/)
+- [ LinkedIn](https://www.linkedin.com/in/owen-wertzberger/)
