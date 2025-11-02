@@ -159,34 +159,29 @@ me and hopefully some of you. With me so far? Great, then let's go!
        specified earlier.
 
 5.  ## POST-INSTALL
-    1.  If you're ready to dive into settings and configure your new system,
-        this is where you get off, but if not, there's a few post-install things
-        I would recommend you do.
-    2.  [LINITE](https://jplsek.github.io/Linite/) is an install script
-        generator that works with a bunch of Linux distros, including Arch! Just
-        hit Arch Linux at the top, check all the software you want, copy the
-        command at the bottom, and paste into your terminal with Ctrl+Shift+V.
-        An example command would look something like this:
-        <!-- markdownlint-disable-next-line -->
 
-              ```bash title="bash"
-              sudo pacman -Sy vim firefox make cmake git krita gimp inkscape blender libreoffice vlc audacity thunderbird steam wine zsh
-              ```
+    If you're ready to dive into settings and configure your new system, this is
+    where you get off, but if not, there's a few post-install things I would
+    recommend you do. [LINITE](https://jplsek.github.io/Linite/) is an install
+    script generator that works with a bunch of Linux distros, including Arch!
+    Just hit Arch Linux at the top, check all the software you want, copy the
+    command at the bottom, and paste into your terminal with Ctrl+Shift+V. An
+    example command would look something like this:
+    `sudo pacman -Sy vim firefox make cmake git krita gimp inkscape blender libreoffice vlc audacity thunderbird steam wine zsh`
 
-    3.  You can make installing packages from AUR (Arch User Repository) a lot
-        easier by installing yay (Yet Another Yogurt wrapper). First up, make
-        sure you have the packages `base-devel` and `git` by executing
-        `sudo pacman -S base-devel git` Then, clone the git repo for yay and
-        switch to it with `git clone https://aur.archlinux.org/yay.git` and
-        `cd yay` After that, you can build yay from source code with the command
-        `makepkg -si` To check if it installed correctly, simply type `yay`. If
-        it recognizes the command, you're good.
-    4.  Yay is a powerful CLI (Command Line Interface), but a GUI (Graphical
-        User Interface) is a lot easier to use for most users. For this I
-        recommend Octopi, which you can install with the command `yay -S octopi`
-        This will take a while to build, but once it's done, you can browse
-        packages from a list, and even sort them by criteria like votes and last
-        updated.
+    You can make installing packages from AUR (Arch User Repository) a lot
+    easier by installing yay (Yet Another Yogurt wrapper). First up, make sure
+    you have the packages `base-devel` and `git` by executing
+    `sudo pacman -S base-devel git` Then, clone the git repo for yay and switch
+    to it with `git clone https://aur.archlinux.org/yay.git` and `cd yay` After
+    that, you can build yay from source code with the command `makepkg -si` To
+    check if it installed correctly, simply type `yay`. If it recognizes the
+    command, you're good. Yay is a powerful CLI (Command Line Interface), but a
+    GUI (Graphical User Interface) is a lot easier to use for most users. For
+    this I recommend Octopi, which you can install with the command
+    `yay -S octopi` This will take a while to build, but once it's done, you can
+    browse packages from a list, and even sort them by criteria like votes and
+    last updated.
 
 That was a lot, huh? Hopefully now you see why Microsoft has such a stranglehold
 on the desktop OS market. Turns out, computers are complicated! And Microsoft
