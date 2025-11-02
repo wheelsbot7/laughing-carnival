@@ -98,6 +98,8 @@ I'm happy for them. For everyone else, just go with Arch.
 
 ##  Garuda
 
+![Garuda's default desktop](./images/garuda-dr460nized.webp "It's called 'dr460nized' because of course it is.")
+
 Garuda is a Hindu eagle god who acts as the mount of Vishnu and also hates all
 snakes everywhere forever. Garuda _Linux_ is a distribution of Arch Linux that
 aims to provide a "beautiful and easy-to-use desktop experience". Both are
