@@ -158,7 +158,26 @@ screenshots.
 
 ## CachyOS
 
-Conversely, CachyOS is a distro defined by deep technical changes.
+Conversely, CachyOS is a distro defined by deep technical changes that threaten
+to derail this article altogether. Thankfully because of the low-level nature of
+these changes, the broad strokes are all you really need to know as someone who
+doesn't write kernel patches as a hobby.
+
+So your CPU can do a lot of things at once. If it has multiple cores it can do
+even more things at once. But if the number of running programs is ever more
+than the number of cores (which is always the case if you're not still on DOS),
+the kernel has to decide how to portion out each core so that each program gets
+at least a little bit of CPU power. This process is done by what is called a
+scheduler. The way it divides CPU time is
+[very complicated](<https://en.wikipedia.org/wiki/Scheduling_(computing)>), but
+every millisecond the CPU is interrupted by the kernel to check if there's a
+hardware signal it has to think about first. This is why your mouse moves even
+when your CPU is completely slammed, the kernel forces processing your hardware
+inputs to take priority over everything else.
+
+CachyOS implements a custom scheduler that aims to increase responsiveness by
+prioritizing certain programs via a "burstiness" metric. Basically, if a process
+won't take a lot of CPU power to complete, it gets to go first.
 
 ##  SteamOS
 
