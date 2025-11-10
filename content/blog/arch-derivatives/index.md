@@ -1,7 +1,7 @@
 ---
 title: "Arch Linux Derivatives"
 params:
-  icon: "󰜡 "
+  icon: "󰣇 "
 date: 2025-09-10
 publishDate: 2025-09-10
 lastmod: 2025-09-10
@@ -163,7 +163,7 @@ to derail this article altogether. Thankfully because of the low-level nature of
 these changes, the broad strokes are all you really need to know as someone who
 doesn't write kernel patches as a hobby.
 
-So your CPU can do a lot of things at once. If it has multiple cores it can do
+So, your CPU can do a lot of things at once. If it has multiple cores it can do
 even more things at once. But if the number of running programs is ever more
 than the number of cores (which is always the case if you're not still on DOS),
 the kernel has to decide how to portion out each core so that each program gets
@@ -177,9 +177,31 @@ inputs to take priority over everything else.
 
 CachyOS implements a custom scheduler that aims to increase responsiveness by
 prioritizing certain programs via a "burstiness" metric. Basically, if a process
-won't take a lot of CPU power to complete, it gets to go first.
+won't take a lot of CPU power to complete, it gets to go first. This on its own
+would be niche and unremarkable, but CachyOS has gained an unusual amount of
+popularity in a very short time. [DistroWatch](https://distrowatch.com), a
+website that reports on Linux distributions[^7], has had CachyOS at the top of
+its trending page for all of 2025. This is just one source, and a heavily biased
+on at that, but it's worth mentioning. It's still a rock-solid distro, don't get
+me wrong, just a bit overhyped.
 
 ##  SteamOS
+
+Believe it or not, SteamOS wasn't always Arch-based! Back before the Steam Deck
+and Proton, SteamOS was a Debian-based distribution meant mostly for streaming
+games from a Windows PC. The move to Arch was primarily to avoid Debian's slow
+release pace. Funny, you'd think that'd be a perfect fit for Valve.
+
+The biggest difference between modern SteamOS and a standard Arch install with
+matching packages is the immutable file system. SteamOS, despite the freedom it
+gives you, is still built like a console operating system. When the OS is only
+designed to run on a single hardware configuration, it makes sense to
+standardize installations as much as possible for better support. As the name
+would imply, everything is built around Steam. That's where you update your
+system, change settings, and manage your files. It's honestly impressive the
+level of control it gives you within a controller-focused interface. Overall,
+SteamOS does a really good job giving consumers who want it to just work what
+they want while also giving nerds room to mess around.
 
 [^1]:
     The third pillar of linux distributions, Fedora, actually follows the
@@ -215,3 +237,7 @@ won't take a lot of CPU power to complete, it gets to go first.
 [^6]:
     Hell, Gentoo is a Linux distro where every single package is compiled from
     source, even the kernel.
+
+[^7]:
+    As well as other open-source operating systems not based on Linux like
+    Haiku, ReactOS, and flavors of BSD.
