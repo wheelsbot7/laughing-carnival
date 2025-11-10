@@ -3,7 +3,7 @@ title: "Arch Linux Derivatives"
 params:
   icon: "󰣇 "
 date: 2025-09-10
-publishDate: 2025-09-10
+publishDate: 2025-11-10
 lastmod: 2025-09-10
 tags:
   - linux
@@ -11,7 +11,7 @@ tags:
 categories: []
 series: []
 description: "An overview of Arch-derived Linux distributions"
-draft: true
+draft: false
 ---
 
 Arch Linux has a reputation for being a "difficult" distribution. I've written
@@ -193,15 +193,40 @@ games from a Windows PC. The move to Arch was primarily to avoid Debian's slow
 release pace. Funny, you'd think that'd be a perfect fit for Valve.
 
 The biggest difference between modern SteamOS and a standard Arch install with
-matching packages is the immutable file system. SteamOS, despite the freedom it
-gives you, is still built like a console operating system. When the OS is only
-designed to run on a single hardware configuration, it makes sense to
-standardize installations as much as possible for better support. As the name
-would imply, everything is built around Steam. That's where you update your
-system, change settings, and manage your files. It's honestly impressive the
-level of control it gives you within a controller-focused interface. Overall,
-SteamOS does a really good job giving consumers who want it to just work what
-they want while also giving nerds room to mess around.
+matching packages is the immutable file system. Nothing outside of the home
+directory can be modified by the user, not even with root privileges. SteamOS,
+despite the freedom it gives you, is still built like a console operating
+system. When the OS is only designed to run on a single hardware configuration,
+it makes sense to standardize installations as much as possible for better
+support. As the name would imply, everything is built around Steam. That's where
+you update your system, change settings, and manage your files. It's honestly
+impressive the level of control it gives you within a controller-focused
+interface. Overall, SteamOS does a really good job giving consumers who want it
+to just work what they want while also giving nerds room to mess around.
+
+## Conclusion or: How I Learned to Stop Worrying and Love the Terminal
+
+Arch's small but sturdy foundation makes it an attractive option for many use
+cases, and while some of those use cases warrant a distinct distribution, you
+can get 99% of their functionality with an archinstall script. I'd still
+recommend that option for most people, but CachyOS and EndeavourOS offer
+convenience in a non-intrusive way, so they're the go-to for people who are
+adamantly opposed to terminal usage. The thing is, as much as I get how people
+should be able to use computers how they want, at a certain point that attitude
+becomes a problem. The command line isn't as scary as it sounds, you won't die
+if you learn how to use `ls` and `cd`. Just try to be a little more curious
+about the tools you use and you'll have a good time. At least with Linux you
+don't have a multi-billion dollar corporation working to de-skill their userbase
+into compliant consumers dependent on a chatbot for everything.
+
+Sorry for the soapbox-ing, grandmas still on Windows 7 aren't the problem, I'm
+just frustrated by people's unwillingness to learn new things. Bottom line, all
+of these are good options, just try to get comfortable with not knowing
+everything from the get-go.
+
+Signing off, Wheelsbot
+
+~~_Things only get better once you accept they can be different._~~
 
 [^1]:
     The third pillar of linux distributions, Fedora, actually follows the
