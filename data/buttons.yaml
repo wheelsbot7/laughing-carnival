@@ -1,3 +1,6 @@
+- name: akselmo
+  file: akselmo.png
+  link: https://akselmo.dev
 - name: Clygro
   file: clygro8831.svg
   link: https://clygro.cc
