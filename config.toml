@@ -1,6 +1,6 @@
 baseurl = "/"
 title = "Wheelsblog V7"
-copyright = "Copyright (c) 2025, all rights reserved."
+copyright = "Copyright (c) 2026, all rights reserved."
 languageCode = "en-US"
 canonifyurls = true
 pagination.pagerSize = 8
