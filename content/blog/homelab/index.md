@@ -26,7 +26,7 @@ That's ultimately what I mean by "not hard, just complicated". You're not making
 Networking is an incredibly broad subject that can be easy to lose yourself in, but for our purposes we just need to consider how you want to access your services. All networked services run on HTTP "ports". The port number can be anywhere from 0 to 65535, and some services can use multiple ports. You can access any service simply by typing your lab's IP address followed by the port like so: `10.0.0.1:1234`. This IP is your **local** IP, meaning it's only accessible by devices connected to the same network. You can scan your local network for devices using `nmap` with the following arguments.
 
 ```bash
-nmap -sP 192.168.1.0/24
+nmap -sP 10.0.0.1/24
 ```
 
 This address is assigned by your router, and [different routers use different IP ranges](https://www.techspot.com/guides/287-default-router-ip-addresses/) for local IP addresses. You can find yours in whatever settings app you use or `fastfetch` if you're comfortable with the command line. If you aren't, you need to change that pretty soon because the most useful and flexible way to remotely access your lab is SSH.
@@ -35,12 +35,41 @@ This address is assigned by your router, and [different routers use different IP
 
 SSH is great. If you get into homelabbing, it will become your lifeline. Remote, root-level access to your machine is obviously incredibly powerful, which is why you'll want to do a few things to secure it first.
 
-Before you can do anything, your lab has to be running the SSH Daemon[^1]. This is a good opportunity to get familiar with Systemd services. It's not necessary, you can technically just run `sshd` in a terminal and leave it open, but Systemd is a common way to manage these background processes.
+Before you can do anything, your lab has to be running the SSH Daemon[^1]. This is a good opportunity to get familiar with Systemd services. It's not necessary, you can technically just run `sshd` in a terminal and leave it open, but Systemd is a common way to manage these background processes. Also, if you're not using Systemd, you clearly already know enough about init systems to have opinions about them and this guide is not for you.
 
 ```bash
 sudo systemctl enable --now sshd.service
 #Or, if you don't want sshd to run on startup, instead run
 sudo systemctl start sshd.service
+#Now that the SSH server is running on the lab, you can take another computer and SSH into it with the following command
+ssh user@10.0.0.1
+```
+
+When running SSH like this, it will ask you for your password every time you log in. Not only is this annoying, it's generally bad practice. Right now you're only vulnerable to attackers who are also on your Wi-Fi network, so you're not _really_ at risk, but the annoyance is reason enough to learn public key authentication.
+
+```bash
+#ssh-keygen is an interactive utility, so you'll need to answer its questions after running the command
+ssh-keygen
+Enter file in which to save the key (/home/$USER/.ssh/id_ed25519):
+#The .ssh folder in your home directory is where you keep your ssh keys. You're typing the path as well as the filename, so name it something you'll remember
+/home/$USER/.ssh/key4TheLab
+Enter passphrase for "/home/$USER/.ssh/key4TheLab" (empty for no passphrase):
+#You can add a passphrase here for added security, but it's not necessary for our purposes, you can just press enter
+Enter same passphrase again:
+#Same deal, just press enter
+
+#If you just want to run a single command, you can use these arguments
+ssh-keygen -f ~/.ssh/key4TheLab -N ''
+
+#Once the key is generated, we can tell our lab to accept this key with the following command. We're only sending the public key, the private key stays with you.
+ssh-copy-id -i ~/.ssh/key4TheLab.pub user@10.0.0.1
+```
+
+One last step before your passwordless login. By default, you'll have to tell ssh to use your private key every time, but thankfully this can be automated with `~/.ssh/config`.
+
+```sshclientconfig
+Host 10.0.0.1
+  IdentityFile ~/.ssh/key4TheLab
 ```
 
 [^1]: The name "Daemon" actually comes from some nerds at MIT in 1963 who took inspiration from "Maxwell's Daemon", which is a physics thought experiment that gets its name from ancient Greek definition of Daemon: an "unknown superfactor". Essentially a catch-all term for the cause of phenomenon unexplainable by reason or divinity. They're just little guys that design snowflakes and shape clouds and tangle headphone cables. Sorry to get your hopes up, homelabbing does not involve Luciferian rituals.
