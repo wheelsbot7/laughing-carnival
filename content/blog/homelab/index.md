@@ -72,4 +72,10 @@ Host 10.0.0.1
   IdentityFile ~/.ssh/key4TheLab
 ```
 
+All set! Now that your lab is accessible remotely, you can stick it in a closet and forget about it. Barring any power outages, connectivity issues, or rats chewing on the wires, you don't have to touch the lab ever again. But that's not a huge advantage if you can only connect to it from the same network. You're really just saving yourself from hauling out a monitor and keyboard every time you want to change something. To access your lab from anywhere, we need a tool to route traffic from your lab to another public IP address. Unfortunately, exposing your lab to the public internet is a massive security risk. It's also disallowed by every major consumer ISP (Internet Service Provider). What we really need is a private tunnel to route traffic through the public internet, and that service exists in the form of Tailscale.
+
+### Tailscale
+
+Tailscale is really just a VPN under the hood. The difference is that instead of acting as an anonymous barrier between you and the rest of the internet, it's a bridge network your devices can use to access each other from any network.
+
 [^1]: The name "Daemon" actually comes from some nerds at MIT in 1963 who took inspiration from "Maxwell's Daemon", which is a physics thought experiment that gets its name from ancient Greek definition of Daemon: an "unknown superfactor". Essentially a catch-all term for the cause of phenomenon unexplainable by reason or divinity. They're just little guys that design snowflakes and shape clouds and tangle headphone cables. Sorry to get your hopes up, homelabbing does not involve Luciferian rituals.
