@@ -76,6 +76,38 @@ All set! Now that your lab is accessible remotely, you can stick it in a closet 
 
 ### Tailscale
 
-Tailscale is really just a VPN under the hood. The difference is that instead of acting as an anonymous barrier between you and the rest of the internet, it's a bridge network your devices can use to access each other from any network.
+Tailscale is really just a VPN under the hood. The difference is that instead of acting as an anonymous barrier between you and the rest of the internet, it's a bridge network your devices can use to access each other from any network. Here's a simplified overview of how VPNs are traditionally used.
+
+```mermaid
+---
+config:
+  theme: 'dark'
+---
+sequenceDiagram
+Your Computer(In Peru)->>VPN(In Ashburn VA): Fetch me data from wikipedia.org
+VPN(In Ashburn VA)->>Wikipedia: Give me data please, no reason. <br/>I'm from Ashburn, Virginia BTW
+Wikipedia->>VPN(In Ashburn VA): Alright, here's the data we give to <br/>people from Ashburn, Virginia
+VPN(In Ashburn VA)->>Your Computer(In Peru): Here's the Viginian Data you asked for
+```
+
+Tailscale, on the other hand, looks more like this.
+
+```mermaid
+---
+config:
+  theme: 'dark'
+---
+sequenceDiagram
+Box indigo Your Tailscale Network
+participant Your Computer
+participant Tailscale
+participant Homelab
+end
+Homelab->>Tailscale: Here's all my services
+Your Computer->>Tailscale: Fetch me my Jellyfin server <br/>on port 8096
+Tailscale->>Your Computer: Okay, I'll send you what Homelab's <br/>giving me on port 8096
+Attacker-xHomelab: Not accessible
+Attacker-xTailscale: Can't log in
+```
 
 [^1]: The name "Daemon" actually comes from some nerds at MIT in 1963 who took inspiration from "Maxwell's Daemon", which is a physics thought experiment that gets its name from ancient Greek definition of Daemon: an "unknown superfactor". Essentially a catch-all term for the cause of phenomenon unexplainable by reason or divinity. They're just little guys that design snowflakes and shape clouds and tangle headphone cables. Sorry to get your hopes up, homelabbing does not involve Luciferian rituals.
