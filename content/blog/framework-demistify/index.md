@@ -34,7 +34,7 @@ shockingly close to how web frameworks market themselves.
 They always try to paint themselves as the only product you'll need for web
 development in a way that appeals to business types, but overwhelms anyone who
 might be interested in actually _using_ it. Should we be worried that the most
-powerful people in our society respond best to nonsense word salad that _eludes_
+powerful people in our society respond best to nonsense word salad that _alludes_
 to something valuable? Probably, but that can't be solved with a blog post, so
 instead I'll try to demystify some of the marketing-speak that surrounds
 frameworks, JavaScript, and web development in general.
