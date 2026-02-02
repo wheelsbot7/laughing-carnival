@@ -10,6 +10,12 @@ description = "Recomendations on further reading"
 This page is for linking other sites/articles that I would recommend you read if
 your interests and mine overlap.
 
+## [Deep dive into Turso, the "SQLite rewrite in Rust"](https://kerkour.com/turso-sqlite)
+
+A lighter piece about a new database engine that aims to be compatible with SQLite while taking advantage of Rust's type system and memory safety. The author isn't a developer of SQLite, but they offer a nuanced perspective on why SQLite exists, why it's so widely used, and why a compatible rust-based database engine would be useful.
+
+> "SQLite is probably the most deployed database in the world, with dozens of databases on any of your devices and is probably one of the most reliable piece of software in existence, with 590 times more tests than code (I know that tests are code, it's to simplify): ~92,053,100 lines of tests vs ~155,800 lines of code."
+
 ## [Where's the Shovelware? Why AI Coding Claims Don't Add Up](https://mikelovesrobots.substack.com/p/wheres-the-shovelware-why-ai-coding)
 
 A great piece from a former AI optimist who became disillusioned with the
