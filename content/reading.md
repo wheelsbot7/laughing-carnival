@@ -16,6 +16,8 @@ A lighter piece about a new database engine that aims to be compatible with SQLi
 
 > "SQLite is probably the most deployed database in the world, with dozens of databases on any of your devices and is probably one of the most reliable piece of software in existence, with 590 times more tests than code (I know that tests are code, it's to simplify): ~92,053,100 lines of tests vs ~155,800 lines of code."
 
+---
+
 ## [Where's the Shovelware? Why AI Coding Claims Don't Add Up](https://mikelovesrobots.substack.com/p/wheres-the-shovelware-why-ai-coding)
 
 A great piece from a former AI optimist who became disillusioned with the
