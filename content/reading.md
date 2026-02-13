@@ -10,6 +10,16 @@ description = "Recomendations on further reading"
 This page is for linking other sites/articles that I would recommend you read if
 your interests and mine overlap.
 
+## [CCC vs GCC](https://harshanu.space/en/tech/ccc-vs-gcc/)
+
+A comparison between GCC and Anthropic's Claude C Compiler. Very well written, and gives a great rundown on how compilers work. Also shows why being "technically correct" isn't good enough when developing a compiler.
+
+> "GCC has been in development since 1987. That is close to 40 years of work by thousands of contributors. It supports dozens of architectures, hundreds of optimization passes and millions of edge cases that have been discovered and fixed over the decades. The optimization passes alone (register allocation, function inlining, loop unrolling, vectorization, dead code elimination, constant propagation) represent years of PhD-level research. This is one of the reasons why it’s ubiquitous.
+>
+> This is why CCC being able to compile real C code at all is noteworthy. But it also explains why the output quality is far from what GCC produces. Building a compiler that parses C correctly is one thing. Building one that produces fast and efficient machine code is a completely different challenge."
+
+---
+
 ## [Deep dive into Turso, the "SQLite rewrite in Rust"](https://kerkour.com/turso-sqlite)
 
 A lighter piece about a new database engine that aims to be compatible with SQLite while taking advantage of Rust's type system and memory safety. The author isn't a developer of SQLite, but they offer a nuanced perspective on why SQLite exists, why it's so widely used, and why a compatible rust-based database engine would be useful.
