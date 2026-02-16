@@ -163,8 +163,8 @@ point our setup is mostly identical to a standard Debian-based installation.
 
 Your server's definitely connected to the internet at this point, but to
 federate with other users, you'll need a public IP address. Most consumer
-routers don't support this, and opening up your local area network (LAN) to the
-wide area network (WAN) is a major security risk. Instead, we'll be using
+routers don't support this, and opening up your <abbr title="Local Area Network">LAN</abbr> to the
+<abbr title="Wide Area Network">WAN</abbr> is a major security risk. Instead, we'll be using
 Cloudflare tunnels to route any request for your server's URL to a specific port
 on your machine. To start, install Cloudflare's background service daemon with
 the following command:
