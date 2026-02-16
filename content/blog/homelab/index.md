@@ -110,4 +110,8 @@ Attacker-xHomelab: Not accessible
 Attacker-xTailscale: Can't log in
 ```
 
+This solution is ultimately a compromise. Ideally, we could self-host everything and be totally unreliant on outside services. There's even an open-source version of Tailscale called Headscale that allows you to self-host, so why aren't we using that? It all comes down to that public IP address. There's no realistic way to get one without renting a VPS from your favorite megacorp[^2].
+
 [^1]: The name "Daemon" actually comes from some nerds at MIT in 1963 who took inspiration from "Maxwell's Daemon", which is a physics thought experiment that gets its name from ancient Greek definition of Daemon: an "unknown superfactor". Essentially a catch-all term for the cause of phenomenon unexplainable by reason or divinity. They're just little guys that design snowflakes and shape clouds and tangle headphone cables. Sorry to get your hopes up, homelabbing does not involve Luciferian rituals.
+
+[^2]: There are smaller VPS landlords out there, I know Hetzner is a very popular one in Germany, but the nature of the industry favors scale. I'm not saying there's no ethical VPS vendor, I'm just saying more often than not you'll end up giving money to someone who already has way too much of it.

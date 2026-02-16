@@ -4,7 +4,7 @@ params:
   icon: " "
 date: 2025-08-05T13:13:57-04:00
 publishDate: 2025-08-15T13:13:57-04:00
-lastmod: 2025-08-15T13:13:57-04:00
+lastmod: 2026-02-16T13:13:57-04:00
 tags:
   - blog
   - webdev
@@ -161,11 +161,11 @@ point our setup is mostly identical to a standard Debian-based installation.
 
 ## Getting Online
 
-You're server's definitely connected to the internet at this point, but to
+Your server's definitely connected to the internet at this point, but to
 federate with other users, you'll need a public IP address. Most consumer
 routers don't support this, and opening up your local area network (LAN) to the
 wide area network (WAN) is a major security risk. Instead, we'll be using
-Cloudflare tunnels to route any request for your server's url to a specific port
+Cloudflare tunnels to route any request for your server's URL to a specific port
 on your machine. To start, install Cloudflare's background service daemon with
 the following command:
 
@@ -177,16 +177,12 @@ Go into your Cloudflare dashboard and click "Zero Trust" on the sidebar. From
 there, navigate to "Networks -> Tunnels" from a dropdown menu. Hit "New Tunnel"
 and then select the "Cloudflared" option when prompted. It will prompt once more
 for a name before showing a command to run on your machine to bind the tunnel to
-your server. Afterwards, set the tunnel to route the domain you purchased to an
-HTTPS service with the URL "localhost:3000". Lastly, you'll need to put in your
-router's public IP address. You can find this by visiting
-[https://whatismyipaddress.com/](https://whatismyipaddress.com/) and putting the
-given IPv4 address in your tunnel's configuration menu under the heading
-"Private networks". If you can't find it, just save your changes, click on the
+your server. Afterward, set the tunnel to route the domain you purchased to an
+HTTPS service with the URL "localhost:3000". If you can't find it, just save your changes, click on the
 <span class="icon"></span> icon to the right of your tunnel and click
 "Configure".
 
-Afterwards, you should be able to reach your server through your domain on any
+Afterward, you should be able to reach your server through your domain on any
 device. There's only 1 step left to get your mastodon server fully federated:
 join a relay server. A helpful explanation of their purpose is provided in the
 mastodon settings under Settings -> Administration -> Relays. A list of open and
