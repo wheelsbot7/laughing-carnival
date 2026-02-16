@@ -47,32 +47,26 @@ ssh user@10.0.0.1
 
 When running SSH like this, it will ask you for your password every time you log in. Not only is this annoying, it's generally bad practice. Right now you're only vulnerable to attackers who are also on your Wi-Fi network, so you're not _really_ at risk, but the annoyance is reason enough to learn public key authentication.
 
+Something I wish I'd known when I started is that it's not standard practice to generate a new key for each machine you connect to. You _can_ do that, but it requires jumping through hoops that don't exist if you just use one key to identify your client. 
+
 ```bash
 #ssh-keygen is an interactive utility, so you'll need to answer its questions after running the command
 ssh-keygen
 Enter file in which to save the key (/home/$USER/.ssh/id_ed25519):
-#The .ssh folder in your home directory is where you keep your ssh keys. You're typing the path as well as the filename, so name it something you'll remember
-/home/$USER/.ssh/key4TheLab
-Enter passphrase for "/home/$USER/.ssh/key4TheLab" (empty for no passphrase):
+#The .ssh folder in your home directory is where you keep your ssh keys. For our purposes, you just need the one and the default path is fine.
+Enter passphrase for "/home/$USER/.ssh/id_ed25519" (empty for no passphrase):
 #You can add a passphrase here for added security, but it's not necessary for our purposes, you can just press enter
 Enter same passphrase again:
 #Same deal, just press enter
 
 #If you just want to run a single command, you can use these arguments
-ssh-keygen -f ~/.ssh/key4TheLab -N ''
+ssh-keygen -f ~/.ssh/id_ed25519 -N ''
 
 #Once the key is generated, we can tell our lab to accept this key with the following command. We're only sending the public key, the private key stays with you.
-ssh-copy-id -i ~/.ssh/key4TheLab.pub user@10.0.0.1
+ssh-copy-id user@10.0.0.1
 ```
 
-One last step before your passwordless login. By default, you'll have to tell ssh to use your private key every time, but thankfully this can be automated with `~/.ssh/config`.
-
-```sshclientconfig
-Host 10.0.0.1
-  IdentityFile ~/.ssh/key4TheLab
-```
-
-All set! Now that your lab is accessible remotely, you can stick it in a closet and forget about it. Barring any power outages, connectivity issues, or rats chewing on the wires, you don't have to touch the lab ever again. But that's not a huge advantage if you can only connect to it from the same network. You're really just saving yourself from hauling out a monitor and keyboard every time you want to change something. To access your lab from anywhere, we need a tool to route traffic from your lab to another public IP address. Unfortunately, exposing your lab to the public internet is a massive security risk. It's also disallowed by every major consumer ISP (Internet Service Provider). What we really need is a private tunnel to route traffic through the public internet, and that service exists in the form of Tailscale.
+All set! Now that your lab is accessible remotely, you can stick it in a closet and forget about it. Barring any power outages, connectivity issues, or rats chewing on the wires, you don't have to touch the lab ever again. But that's not a huge advantage if you can only connect to it from the same network. You're really just saving yourself from hauling out a monitor and keyboard every time you want to change something. To access your lab from anywhere, we need a tool to route traffic from your lab to another public IP address. Unfortunately, exposing your lab to the public internet is a massive security risk. It's also disallowed by every major consumer <abbr title="Internet Service Provider">ISP</abbr>. What we really need is a private tunnel to route traffic through the public internet, and that service exists in the form of Tailscale.
 
 ### Tailscale
 
