@@ -1,7 +1,7 @@
 +++
 title = "Reading"
 date = "2025-09-07"
-lastmod = "2025-09-08"
+lastmod = "2026-03-29"
 menu = "main"
 weight = 70
 description = "Recomendations on further reading"
@@ -9,6 +9,16 @@ description = "Recomendations on further reading"
 
 This page is for linking other sites/articles that I would recommend you read if
 your interests and mine overlap.
+
+## [how to make programming terrible for everyone](https://jneen.ca/posts/2026-03-27-how-to-make-programming-terrible-for-everyone/)
+
+An evaluation of LLMs role in programming by the standards of a programming language, hearkening all the way back to code generation tools released in 1981. It similarly evaluates the role of abstractions in programming, both why they're helpful and harmful.
+
+> "At what point is the user of a system doing capital-P Programming? Is Excel a programming language? What about The Last One? If scratch is a programming language, does clicking around Unreal Engine count? nginx.conf? What about the command-line flags of find?
+>
+> From my perspective, AI can be seen as an incredibly poorly designed computer language."
+
+---
 
 ## [CCC vs GCC](https://harshanu.space/en/tech/ccc-vs-gcc/)
 
