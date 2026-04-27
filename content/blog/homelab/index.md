@@ -2,9 +2,9 @@
 title: "Homelabbing isn't hard, it's just complicated"
 params:
   icon: " "
-date: 2026-01-12T10:45:52-05:00
-publishDate: 2026-01-12T10:45:52-05:00
-lastmod: 2026-01-12T10:45:52-05:00
+date: 2026-04-27T10:45:52-05:00
+publishDate: 2026-04-27T10:45:52-05:00
+lastmod: 2026-04-27T10:45:52-05:00
 tags:
   - blog
   - homelab
