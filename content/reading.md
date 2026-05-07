@@ -10,6 +10,14 @@ description = "Recomendations on further reading"
 This page is for linking other sites/articles that I would recommend you read if
 your interests and mine overlap.
 
+## [You Should Never Be The Most Sycophantic Participant In A Conversation With A Chatbot](https://defector.com/you-should-never-be-the-most-sycophantic-participant-in-a-conversation-with-a-chatbot)
+
+A case study in why the idea that LLMs will improve if you just write better prompts is inherently flawed. Bonus points for dunking on Marc Andreessen for being both a finance-brained ghoul and willfully ignorant of how LLMs work. 
+
+> "Andreessen is creating—typing out and entering, but not into the chatbot—his own delusion. In trying to tell the chatbot not to hallucinate, he is scripting his own psychotic break. He is doing it because he is a huge dumbass. Don't expect Claude to tell him so."
+
+---
+
 ## [how to make programming terrible for everyone](https://jneen.ca/posts/2026-03-27-how-to-make-programming-terrible-for-everyone/)
 
 An evaluation of LLMs role in programming by the standards of a programming language, hearkening all the way back to code generation tools released in 1981. It similarly evaluates the role of abstractions in programming, both why they're helpful and harmful.

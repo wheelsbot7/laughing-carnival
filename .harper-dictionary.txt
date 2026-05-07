@@ -1,8 +1,7 @@
-EndeavourOS
-distrohop
 AUR
 AUR's
 ActivityPub
+Andreessen
 Astro
 Balena
 CachyOS
@@ -13,6 +12,7 @@ DigitalOcean
 DistroWatch
 Dracut
 EndeavorOS
+EndeavourOS
 F2
 Fi
 Garuda
@@ -43,6 +43,7 @@ XFCE
 archinstall
 burstiness
 co-ed
+distrohop
 gruvbox
 hCaptcha
 homelabbing
