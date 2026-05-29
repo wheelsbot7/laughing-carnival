@@ -10,6 +10,14 @@ description = "Recomendations on further reading"
 This page is for linking other sites/articles that I would recommend you read if
 your interests and mine overlap.
 
+## [Nitpicking the shell history scene in Tron: Legacy](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/tron-legacy/)
+
+A fun mix of media analysis and technical explanation. If you're the type of person to pause movies when there's a computer on screen to pick apart what system they're using, I highly recommend reading. And the cherry on top, this isn't Hollywood technobabble gobbledygook! The majority of quirks in this scene have in-universe explanations! Also, extra points for using the word "squozen". 
+
+> "I hoped this might be fun, interesting, and/or educational. It succeeded at all three, beyond my hopes! Instead of the half hour I’d guessed, we spent a whole day on it, on and off (exchanging Slack messages, in between other work), and squeezed a lot more juice out of it than I’d realised was there to be squozen. By the end of the exercise, I’d decided one of my own initial complaints was wrong (but found another to replace it), and I’d learned some new things myself. And I ended up more impressed than I’d started, with whoever constructed that screenshot."
+
+---
+
 ## [You Should Never Be The Most Sycophantic Participant In A Conversation With A Chatbot](https://defector.com/you-should-never-be-the-most-sycophantic-participant-in-a-conversation-with-a-chatbot)
 
 A case study in why the idea that LLMs will improve if you just write better prompts is inherently flawed. Bonus points for dunking on Marc Andreessen for being both a finance-brained ghoul and willfully ignorant of how LLMs work. 
