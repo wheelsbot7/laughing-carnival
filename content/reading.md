@@ -1,7 +1,7 @@
 +++
 title = "Reading"
 date = "2025-09-07"
-lastmod = "2026-03-29"
+lastmod = "2026-05-29"
 menu = "main"
 weight = 70
 description = "Recomendations on further reading"
