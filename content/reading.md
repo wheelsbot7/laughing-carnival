@@ -10,6 +10,14 @@ description = "Recomendations on further reading"
 This page is for linking other sites/articles that I would recommend you read if
 your interests and mine overlap.
 
+## [Unreal Engine 6, Blueprint, and Verse, or: Capitalism’s Unmatched Innovative Potential for New and Exciting Hellscapes](https://medium.com/@quiggy/unreal-engine-6-blueprint-and-verse-or-capitalisms-unmatched-innovative-potential-for-new-and-65d1970635a2)
+
+For anyone interested in programming language design, this offers a good vertical slice into Epic Games' fancy new scripting language. Written informally, it's also a very entertaining read for anyone with opinions about stuff like keywords, whitespace, and functional programming.
+
+> "_Oh no_. If you’re like me, you already have some alarm bells going off in your head. For one, writing a custom language is rarely the correct solution for any engineering problem — language design is _hard_, and the reason “bad” languages like C++ or PHP or [insert your least favorite language] persist is because despite having deep problems they still do something better than the alternative. Something much bigger stood out to me from this initial section, though: Verse is _code_. In other words, Verse is _not_ visual scripting, and it does _not_ replace Blueprint. It’s doing a different thing, and if you work at a studio that relies on Blueprint to bridge the designer/programmer gap, too bad. Your designers need to learn Verse now."
+
+---
+
 ## [Nitpicking the shell history scene in Tron: Legacy](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/tron-legacy/)
 
 A fun mix of media analysis and technical explanation. If you're the type of person to pause movies when there's a computer on screen to pick apart what system they're using, I highly recommend reading. And the cherry on top, this isn't Hollywood technobabble gobbledygook! The majority of quirks in this scene have in-universe explanations! Also, extra points for using the word "squozen". 
