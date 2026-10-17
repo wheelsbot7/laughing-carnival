@@ -82,7 +82,7 @@ generate_opengraph_image = false        # enable opengraph image auto generation
 
 [params.mastodon] # https://joinmastodon.org/verification
 username = "wheels"
-server = "https://lab.wheelsbot.dev"
+server = "https://gotosocial.wheelsbot.dev"
 
 [markup.goldmark.renderer]
 unsafe = true # Allow HTML in md files

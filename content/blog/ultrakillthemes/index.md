@@ -23,7 +23,7 @@ draft: false
 Alright, brace yourselves, hot take incoming: I really like ULTRAKILL. I know,
 right? Somebody had to say it. There's not much to be said on the game itself
 that would justify the bandwidth it would take to deliver similarly scalding hot
-takes. But dropping the sarcasm for a moment, there is one community sentient I
+takes. But dropping the sarcasm for a moment, there is one community sentiment I
 take issue with. Specifically the non-engagement with the less "videogame-y"
 parts.
 
@@ -31,7 +31,7 @@ parts.
 
 Right off the bat, ULTRAKILL does not demand the level of seriousness I am about
 to give it. There are a million examples I could point to, from the sandbox
-literally being gm_construct to the museum that allows you to pick up and throw
+literally being `gm_construct` to the museum that allows you to pick up and throw
 marketable plushies of everyone who worked on the game. My personal favorite has
 to be `A R M B O Y ! ! !`, a secret enemy hidden behind a building in 6-1. When
 you get close to `A R M B O Y ! ! !`, his name appears on screen, an effect that
@@ -54,7 +54,7 @@ It's a really funny game. It's self-aware, and not in a quippy "I guess this is
 something I do now" kind of way where it's almost embarrassed of what it is and
 trying to offset that. It knows what it is, and it's _proud_ of it. Most
 importantly, it has enough confidence in itself to break character for a gag
-before resuming like nothing ever happened.And even then it has more sincerity
+before resuming like nothing ever happened. And even then it has more sincerity
 in its jokes than most games have in their climax.
 
 Case in point, every layer in ULTRAKILL has a secret level. For the act finale
@@ -89,7 +89,7 @@ punish mankind for not following his word. But in the bible it's left really
 ambiguous whether or not Hell was actively created by God or if it's more like a
 spiritual dumping ground for everyone who doesn't get into heaven. The whole
 "lake of fire" image isn't touched on until Matthew and isn't really fleshed out
-until Revelations. In other words, Hakita and his writers are doing exactly what
+until Revelation. In other words, Hakita and his writers are doing exactly what
 Dante Alighieri did 700 years ago, interpreting cultural ideas of Hell into
 their creative work, and not retelling the same story we've been reading for
 2000 years.
@@ -110,7 +110,7 @@ Sisyphus is a Jewish plot to turn people away from the truth.
 ![A quote from Titus 1:14 reading "Not devoting themselves to Jewish myths and the commands of people who turn away from the truth."](./images/Jewish_Myths.png)
 
 I would look up if Inferno was considered heretical in its day, but every search
-just leads to stuff about the 6th circle, Heresy. Dante was accused of heresy,
+just leads to stuff about the 6th circle, Heresy. Dante **was** accused of heresy,
 but only 8 years after his death (1329), and for _Monarchia_, which he wrote
 in 1313. It wasn't even for theological reasons, just because it argued for
 Florence's independence from the Papal States. It also got banned by the church
@@ -196,7 +196,7 @@ omniscient, infinitely divine being somehow becoming ...impatient? I don't buy
 that. The clear takeaway from the Testaments is that God feels trapped by his
 nature. He's specifically horrified by his incapacity for change. What brings
 this conflict into focus is my favorite lorebook in the game, hidden in a secret
-corner for 7-4. From other hints, we can assume it was written by Hell Itself,
+corner in 7-4. From other hints, we can assume it was written by Hell Itself,
 and it reads as follows:
 
 <blockquote>
